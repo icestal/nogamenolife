@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         只买不玩康复中心 · 中英文名抓取
 // @namespace    icestal
-// @version      1.0
-// @description  遍历全家桶 games.json 全量 appid,抓取中文名+英文名,产出 games_i18n.tsv 下载
+// @version      1.1
+// @description  抓取 appid 的中英文名,产出 games_i18n.tsv 下载。ONLY_APPIDS 留空=全量,填了=只抓这几款(增量)
 // @match        https://store.steampowered.com/*
 // @match        https://steamcommunity.com/*
 // @grant        none
@@ -17,6 +17,8 @@
   var DELAY_MS = 1600;
   // 抓取模式:auto = 按 name 语言智能降载(只抓缺失语言,约一半请求量);full = 双语言全抓
   var MODE = 'auto';
+  // 增量模式:填要抓的 appid 数组(如 [2206270, 2342950]),只抓这几款;留空(null) = 全量抓 821 款
+  var ONLY_APPIDS = null;
 
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
 
@@ -59,13 +61,17 @@
   }
 
   async function run() {
+    // 增量模式:只保留 ONLY_APPIDS 里的目标
+    var targets = ONLY_APPIDS && ONLY_APPIDS.length
+      ? GAMES.filter(function (x) { return ONLY_APPIDS.indexOf(x[0]) >= 0; })
+      : GAMES;
     var out = [];
     var failed = [];
-    var total = GAMES.length;
-    console.log('开始抓取,共 ' + total + ' 款,模式=' + MODE + ',预计约 ' + Math.ceil(total * DELAY_MS / 1000 / 60) + ' 分钟(请保持页面打开)');
+    var total = targets.length;
+    console.log('开始抓取,共 ' + total + ' 款,模式=' + MODE + (ONLY_APPIDS ? ' (增量)' : ' (全量)') + ',预计约 ' + Math.ceil(total * DELAY_MS / 1000 / 60) + ' 分钟(请保持页面打开)');
     for (var i = 0; i < total; i++) {
-      var appid = GAMES[i][0];
-      var name = GAMES[i][1];
+      var appid = targets[i][0];
+      var name = targets[i][1];
       var langs = pickLang(name, MODE);
       var cn = null, en = null;
 
