@@ -1,0 +1,14 @@
+{
+  "name": "只买不玩康复中心",
+  "short_name": "只买不玩",
+  "description": "只买不玩康复中心 · 买前先查家庭库里有没有",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1b2838",
+  "theme_color": "#1b2838",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

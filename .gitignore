@@ -1,0 +1,8 @@
+# 原始图片不提交
+*.jpg
+*.jpeg
+# 图标候选/临时文件
+icon-c1.png
+icon-c2.png
+icon-c3.png
+_preview.png

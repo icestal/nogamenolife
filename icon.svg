@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a475e"/>
+      <stop offset="1" stop-color="#16202d"/>
+    </linearGradient>
+  </defs>
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- 手柄主体横条 -->
+  <rect x="128" y="232" width="256" height="72" rx="16" fill="#66c0f4"/>
+  <!-- 左握把 -->
+  <rect x="128" y="252" width="56" height="96" rx="20" fill="#66c0f4"/>
+  <!-- 右握把 -->
+  <rect x="328" y="252" width="56" height="96" rx="20" fill="#66c0f4"/>
+  <!-- 十字键 -->
+  <rect x="178" y="246" width="28" height="88" rx="8" fill="#1b2838"/>
+  <rect x="158" y="266" width="68" height="28" rx="8" fill="#1b2838"/>
+  <!-- 两个按钮 -->
+  <circle cx="344" cy="258" r="16" fill="#1b2838"/>
+  <circle cx="380" cy="292" r="16" fill="#1b2838"/>
+</svg>

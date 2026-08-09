@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b2838">
+<title>只买不玩康复中心</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-512.png">
+<style>
+  :root {
+    --bg: #1b2838;
+    --bg-card: #2a475e;
+    --bg-input: #16202d;
+    --text: #e8e8e8;
+    --text-dim: #9aa7b5;
+    --accent: #66c0f4;
+    --border: #3a4a5a;
+    --radius: 8px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    min-height: 100%;
+  }
+  body { padding-bottom: env(safe-area-inset-bottom); }
+
+  /* 顶部 */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(27,40,56,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: calc(12px + env(safe-area-inset-top)) 16px 10px;
+  }
+  .site-title { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+  .site-sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+  .site-tagline { font-size: 12px; color: var(--accent); margin-top: 4px; }
+
+  /* 搜索框 */
+  .search-wrap { margin-top: 10px; position: relative; }
+  .search-wrap input {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: 16px;
+    padding: 12px 14px 12px 40px;
+    outline: none;
+  }
+  .search-wrap input:focus { border-color: var(--accent); }
+  .search-wrap input::placeholder { color: var(--text-dim); }
+  .search-icon {
+    position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    color: var(--text-dim); font-size: 16px; pointer-events: none;
+  }
+  .search-clear {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: var(--text-dim);
+    font-size: 14px; padding: 6px; cursor: pointer; display: none;
+  }
+
+  /* 统计条 */
+  .stats {
+    display: flex; gap: 12px; align-items: center;
+    font-size: 12px; color: var(--text-dim);
+    padding: 10px 16px 0;
+  }
+  .stats b { color: var(--accent); font-weight: 600; }
+
+  /* 游戏网格 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px 12px 24px;
+  }
+  @media (min-width: 600px)  { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 900px)  { .grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 1200px) { .grid { grid-template-columns: repeat(5, 1fr); } }
+
+  .card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: transform .15s ease;
+  }
+  .card:active { transform: scale(0.97); }
+  .card img {
+    width: 100%;
+    aspect-ratio: 460/215;
+    display: block;
+    object-fit: cover;
+    background: var(--bg-input);
+  }
+  .card .name {
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 1.35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .card .owner {
+    padding: 0 10px 8px;
+    font-size: 11px;
+    color: var(--text-dim);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* 空状态 */
+  .empty {
+    text-align: center; color: var(--text-dim);
+    padding: 60px 20px; font-size: 14px;
+  }
+
+  footer {
+    text-align: center; font-size: 11px; color: var(--text-dim);
+    padding: 8px 16px 24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="site-title">🎮 只买不玩康复中心</div>
+  <div class="site-tagline">专治光买不玩 · 买前先挂号</div>
+  <div class="site-sub" id="site-sub">加载中…</div>
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input id="search" type="search" placeholder="搜索游戏（支持中英文）" autocomplete="off" enterkeyhint="search">
+    <button class="search-clear" id="search-clear" title="清空">✕</button>
+  </div>
+</header>
+
+<div class="stats">
+  <span>共 <b id="stat-total">0</b> 款</span>
+  <span>显示 <b id="stat-show">0</b> 款</span>
+</div>
+
+<main class="grid" id="grid"></main>
+
+<div class="empty" id="empty" style="display:none;">没有找到匹配的游戏<br>换个关键词试试</div>
+
+<footer id="footer"></footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var searchEl = document.getElementById('search');
+  var clearEl = document.getElementById('search-clear');
+  var gridEl = document.getElementById('grid');
+  var emptyEl = document.getElementById('empty');
+  var totalEl = document.getElementById('stat-total');
+  var showEl = document.getElementById('stat-show');
+
+  var GAMES = [];
+  var SITE = {};
+
+  // 封面图：Steam 官方 CDN，按 appid 外链
+  function coverUrl(id) {
+    return 'https://cdn.cloudflare.steamstatic.com/steam/apps/' + id + '/header.jpg';
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function filterGames(keyword) {
+    keyword = keyword.trim().toLowerCase();
+    if (!keyword) return GAMES;
+    return GAMES.filter(function (g) {
+      return (g.name && g.name.toLowerCase().indexOf(keyword) >= 0)
+          || (g.cn && g.cn.toLowerCase().indexOf(keyword) >= 0)
+          || (g.pinyin && g.pinyin.toLowerCase().indexOf(keyword) >= 0);
+    });
+  }
+
+  function render(list) {
+    gridEl.innerHTML = '';
+    emptyEl.style.display = list.length ? 'none' : 'block';
+    showEl.textContent = list.length;
+
+    var frag = document.createDocumentFragment();
+    list.forEach(function (g) {
+      var card = document.createElement('div');
+      card.className = 'card';
+
+      var img = document.createElement('img');
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.alt = g.name;
+      img.src = coverUrl(g.id);
+      img.onerror = function () {
+        // 封面图加载失败时用占位块
+        this.style.display = 'none';
+        this.parentNode.insertBefore(placeholder(this), this.nextSibling);
+      };
+      card.appendChild(img);
+
+      var name = document.createElement('div');
+      name.className = 'name';
+      name.textContent = g.cn && g.cn !== g.name ? g.name + ' / ' + g.cn : g.name;
+      card.appendChild(name);
+
+      var owners = Array.isArray(g.owners) ? g.owners : (g.owner ? [g.owner] : []);
+      if (owners.length) {
+        var owner = document.createElement('div');
+        owner.className = 'owner';
+        owner.textContent = owners.join(' · ');
+        card.appendChild(owner);
+      }
+
+      frag.appendChild(card);
+    });
+    gridEl.appendChild(frag);
+  }
+
+  function placeholder(el) {
+    var div = document.createElement('div');
+    div.style.width = '100%';
+    div.style.aspectRatio = '460/215';
+    div.style.background = '#16202d';
+    div.style.display = 'flex';
+    div.style.alignItems = 'center';
+    div.style.justifyContent = 'center';
+    div.style.color = '#9aa7b5';
+    div.style.fontSize = '12px';
+    div.textContent = '图片加载失败';
+    return div;
+  }
+
+  var timer = null;
+  searchEl.addEventListener('input', function () {
+    clearEl.style.display = this.value ? 'block' : 'none';
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      render(filterGames(searchEl.value));
+    }, 120);
+  });
+
+  clearEl.addEventListener('click', function () {
+    searchEl.value = '';
+    clearEl.style.display = 'none';
+    render(GAMES);
+    searchEl.focus();
+  });
+
+  fetch('games.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) {
+      SITE = data.site || {};
+      GAMES = Array.isArray(data.games) ? data.games : [];
+      document.getElementById('site-sub').textContent =
+        '更新于 ' + (data.updated || '-') + ' · 数据源：Steam 官方';
+      totalEl.textContent = GAMES.length;
+      render(GAMES);
+      document.title = (SITE.title || '只买不玩康复中心') + ' · ' + GAMES.length + '款游戏';
+      document.getElementById('footer').textContent =
+        (SITE.title || '只买不玩康复中心') + ' · 买前查一查，康复靠大家';
+    })
+    .catch(function (err) {
+      document.getElementById('site-sub').textContent = '数据加载失败：' + err.message;
+      emptyEl.style.display = 'block';
+      emptyEl.textContent = 'games.json 加载失败，请检查文件是否已部署';
+    });
+})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+</body>
+</html>
