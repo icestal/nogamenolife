@@ -135,7 +135,7 @@
   <div class="site-sub" id="site-sub">加载中…</div>
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input id="search" type="search" placeholder="搜索游戏（支持中英文）" autocomplete="off" enterkeyhint="search">
+    <input id="search" type="search" placeholder="搜索游戏（支持中英文·别名·系列）" autocomplete="off" enterkeyhint="search">
     <button class="search-clear" id="search-clear" title="清空">✕</button>
   </div>
 </header>
@@ -176,14 +176,45 @@
     });
   }
 
+  // 判断游戏是否匹配关键词:name / cn / en / aliases / series 任一命中即可
+  function matchGame(g, kw) {
+    if (g.name && g.name.toLowerCase().indexOf(kw) >= 0) return true;
+    if (g.cn && g.cn.toLowerCase().indexOf(kw) >= 0) return true;
+    if (g.en && g.en.toLowerCase().indexOf(kw) >= 0) return true;
+    if (g.series && g.series.toLowerCase().indexOf(kw) >= 0) return true;
+    if (Array.isArray(g.aliases)) {
+      for (var i = 0; i < g.aliases.length; i++) {
+        if (g.aliases[i] && g.aliases[i].toLowerCase().indexOf(kw) >= 0) return true;
+      }
+    }
+    if (g.pinyin && g.pinyin.toLowerCase().indexOf(kw) >= 0) return true;
+    return false;
+  }
+
+  // 搜索时按系列聚类:有系列的先按系列名聚一起、组内按名字,无系列的排末尾
+  function sortBySeries(list) {
+    var withSeries = [];
+    var without = [];
+    list.forEach(function (g) {
+      (g.series ? withSeries : without).push(g);
+    });
+    withSeries.sort(function (a, b) {
+      if (a.series < b.series) return -1;
+      if (a.series > b.series) return 1;
+      return String(a.name).localeCompare(String(b.name));
+    });
+    without.sort(function (a, b) {
+      return String(a.name).localeCompare(String(b.name));
+    });
+    return withSeries.concat(without);
+  }
+
   function filterGames(keyword) {
     keyword = keyword.trim().toLowerCase();
     if (!keyword) return GAMES;
-    return GAMES.filter(function (g) {
-      return (g.name && g.name.toLowerCase().indexOf(keyword) >= 0)
-          || (g.cn && g.cn.toLowerCase().indexOf(keyword) >= 0)
-          || (g.pinyin && g.pinyin.toLowerCase().indexOf(keyword) >= 0);
-    });
+    return sortBySeries(GAMES.filter(function (g) {
+      return matchGame(g, keyword);
+    }));
   }
 
   function render(list) {
@@ -210,7 +241,7 @@
 
       var name = document.createElement('div');
       name.className = 'name';
-      name.textContent = g.cn && g.cn !== g.name ? g.name + ' / ' + g.cn : g.name;
+      name.textContent = g.cn && g.cn !== g.name ? g.cn + ' / ' + g.name : g.name;
       card.appendChild(name);
 
       var owners = Array.isArray(g.owners) ? g.owners : (g.owner ? [g.owner] : []);

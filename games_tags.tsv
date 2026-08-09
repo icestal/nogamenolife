@@ -1,0 +1,510 @@
+# 系列/别名标签表:appid<TAB>系列<TAB>别名A<TAB>别名B...
+# 系列字段统一用于"同系列聚类排序";别名用于补充搜索词(俗称/简称/英文名)
+# 半条命系列
+220	半条命系列	half-life	半条命	半衰期	hl
+320	半条命系列	half-life	半条命	半衰期	hl
+360	半条命系列	half-life	半条命	半衰期	hl
+# 求生之路系列
+500	求生之路系列	left-4-dead	求生之路	l4d
+550	求生之路系列	left-4-dead	求生之路	l4d
+# 反恐精英系列
+730	反恐精英系列	counter-strike	cs	反恐精英
+# DOOM系列
+2280	DOOM系列	doom	毁灭战士
+9050	DOOM系列	doom	毁灭战士
+9070	DOOM系列	doom	毁灭战士
+208200	DOOM系列	doom	毁灭战士
+379720	DOOM系列	doom	毁灭战士
+782330	DOOM系列	doom	毁灭战士
+1148590	DOOM系列	doom	毁灭战士
+3017860	DOOM系列	doom	毁灭战士
+# 杀手系列
+6860	杀手系列	hitman	杀手	47
+203140	杀手系列	hitman	杀手	47
+205930	杀手系列	hitman	杀手	47
+863550	杀手系列	hitman	杀手	47
+1659040	杀手系列	hitman	杀手	47
+# 古墓丽影系列
+7000	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+8000	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+8140	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+203160	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+289690	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+391220	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+750920	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+2478970	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+2525380	古墓丽影系列	tomb-raider	古墓丽影	劳拉	lara-croft
+# 孤岛惊魂系列
+13520	孤岛惊魂系列	far-cry	孤岛惊魂
+19900	孤岛惊魂系列	far-cry	孤岛惊魂
+220240	孤岛惊魂系列	far-cry	孤岛惊魂
+233270	孤岛惊魂系列	far-cry	孤岛惊魂
+298110	孤岛惊魂系列	far-cry	孤岛惊魂
+371660	孤岛惊魂系列	far-cry	孤岛惊魂
+552520	孤岛惊魂系列	far-cry	孤岛惊魂
+939960	孤岛惊魂系列	far-cry	孤岛惊魂
+# 刺客信条系列
+15100	刺客信条系列	assassin-s-creed	刺客信条	ac
+33230	刺客信条系列	assassin-s-creed	刺客信条	ac
+48190	刺客信条系列	assassin-s-creed	刺客信条	ac
+201870	刺客信条系列	assassin-s-creed	刺客信条	ac
+582160	刺客信条系列	assassin-s-creed	刺客信条	ac
+2208920	刺客信条系列	assassin-s-creed	刺客信条	ac
+# 巫师系列
+20900	巫师系列	witcher	巫师	猎魔人
+20920	巫师系列	witcher	巫师	猎魔人
+292030	巫师系列	witcher	巫师	猎魔人
+# LEGO系列
+21000	LEGO乐高系列	lego	乐高
+213330	LEGO乐高系列	lego	乐高
+214510	LEGO乐高系列	lego	乐高
+249130	LEGO乐高系列	lego	乐高
+267530	LEGO乐高系列	lego	乐高
+285160	LEGO乐高系列	lego	乐高
+313690	LEGO乐高系列	lego	乐高
+352400	LEGO乐高系列	lego	乐高
+405310	LEGO乐高系列	lego	乐高
+438640	LEGO乐高系列	lego	乐高
+578330	LEGO乐高系列	lego	乐高
+640590	LEGO乐高系列	lego	乐高
+647830	LEGO乐高系列	lego	乐高
+818320	LEGO乐高系列	lego	乐高
+829110	LEGO乐高系列	lego	乐高
+881320	LEGO乐高系列	lego	乐高
+920210	LEGO乐高系列	lego	乐高
+2950340	LEGO乐高系列	lego	乐高
+# 辐射系列
+22370	辐射系列	fallout	辐射
+22380	辐射系列	fallout	辐射
+38400	辐射系列	fallout	辐射
+38410	辐射系列	fallout	辐射
+38420	辐射系列	fallout	辐射
+377160	辐射系列	fallout	辐射
+1151340	辐射系列	fallout	辐射
+# 最终幻想系列
+39140	最终幻想系列	final-fantasy	ff	最终幻想
+3837340	最终幻想系列	final-fantasy	ff	最终幻想
+# 泰拉瑞亚系列
+105600	泰拉瑞亚系列	terraria	泰拉瑞亚
+1281930	泰拉瑞亚系列	terraria	泰拉瑞亚
+# 以撒系列
+113200	以撒系列	binding-of-isaac	以撒的结合	以撒
+250900	以撒系列	binding-of-isaac	以撒的结合	以撒
+# 蝙蝠侠阿卡姆系列
+35140	蝙蝠侠阿卡姆系列	batman	蝙蝠侠	arkham	阿卡姆
+200260	蝙蝠侠阿卡姆系列	batman	蝙蝠侠	arkham	阿卡姆
+208650	蝙蝠侠阿卡姆系列	batman	蝙蝠侠	arkham	阿卡姆
+209000	蝙蝠侠阿卡姆系列	batman	蝙蝠侠	arkham	阿卡姆
+# 弹丸论破系列
+413410	弹丸论破系列	danganronpa	弹丸论破	枪弹辩驳
+413420	弹丸论破系列	danganronpa	弹丸论破	枪弹辩驳
+555950	弹丸论破系列	danganronpa	弹丸论破	枪弹辩驳
+567640	弹丸论破系列	danganronpa	弹丸论破	枪弹辩驳
+# 无主之地系列
+49520	无主之地系列	borderlands	无主之地
+261640	无主之地系列	borderlands	无主之地
+397540	无主之地系列	borderlands	无主之地
+1285190	无主之地系列	borderlands	无主之地
+1286680	无主之地系列	borderlands	无主之地
+# 黑手党系列
+50130	黑手党系列	mafia	黑手党	四海兄弟
+360430	黑手党系列	mafia	黑手党	四海兄弟
+1030830	黑手党系列	mafia	黑手党	四海兄弟
+1030840	黑手党系列	mafia	黑手党	四海兄弟
+# 英雄传说·轨迹系列
+251150	轨迹系列	trails	轨迹	英雄传说	闪之轨迹	空之轨迹
+251290	轨迹系列	trails	轨迹	英雄传说	闪之轨迹	空之轨迹
+436670	轨迹系列	trails	轨迹	英雄传说	空之轨迹
+538680	轨迹系列	trails	轨迹	英雄传说	闪之轨迹
+748490	轨迹系列	trails	轨迹	英雄传说	闪之轨迹
+991270	轨迹系列	trails	轨迹	英雄传说	闪之轨迹
+1198090	轨迹系列	trails	轨迹	英雄传说	闪之轨迹
+1457520	轨迹系列	trails	轨迹	英雄传说	零之轨迹
+1461920	轨迹系列	trails	轨迹	英雄传说	碧之轨迹
+# 伊苏系列
+207320	伊苏系列	ys	伊苏
+207350	伊苏系列	ys	伊苏
+223810	伊苏系列	ys	伊苏
+223870	伊苏系列	ys	伊苏
+312540	伊苏系列	ys	伊苏
+579180	伊苏系列	ys	伊苏
+587100	伊苏系列	ys	伊苏
+587110	伊苏系列	ys	伊苏
+1351630	伊苏系列	ys	伊苏
+# 神界原罪系列
+230230	神界原罪系列	divinity	神界
+373420	神界原罪系列	divinity	神界
+435150	神界原罪系列	divinity	神界
+# 饥荒系列
+219740	饥荒系列	don-t-starve	饥荒
+322330	饥荒系列	don-t-starve	饥荒
+# 地铁系列
+286690	地铁系列	metro	地铁
+287390	地铁系列	metro	地铁
+412020	地铁系列	metro	地铁
+1449560	地铁系列	metro	地铁
+# 空洞骑士系列
+367520	空洞骑士系列	hollow-knight	空洞骑士	空洞
+1030300	空洞骑士系列	hollow-knight	空洞骑士	空洞	丝之歌	silksong
+# 魂系·FromSoftware
+236430	魂系FromSoftware	dark-souls	黑暗之魂	souls	魂系	fromsoftware
+335300	魂系FromSoftware	dark-souls	黑暗之魂	souls	魂系	fromsoftware
+374320	魂系FromSoftware	dark-souls	黑暗之魂	souls	魂系	fromsoftware
+570940	魂系FromSoftware	dark-souls	黑暗之魂	souls	魂系	fromsoftware
+1245620	魂系FromSoftware	elden-ring	艾尔登法环	法环	souls	魂系	fromsoftware
+2622380	魂系FromSoftware	elden-ring	艾尔登法环	法环	黑夜君临	souls	fromsoftware
+814380	魂系FromSoftware	sekiro	只狼	影逝二度	souls	魂系	fromsoftware
+# 人中之龙系列
+1105500	人中之龙系列	yakuza	如龙	人中之龙
+1105510	人中之龙系列	yakuza	如龙	人中之龙
+1235140	人中之龙系列	yakuza	如龙	人中之龙
+1388590	人中之龙系列	yakuza	如龙	人中之龙
+1805480	人中之龙系列	yakuza	如龙	人中之龙
+2072450	人中之龙系列	yakuza	如龙	人中之龙
+2375550	人中之龙系列	yakuza	如龙	人中之龙
+3061810	人中之龙系列	yakuza	如龙	人中之龙
+# 仁王/卧龙
+485510	仁王卧龙系列	nioh	仁王
+1325200	仁王卧龙系列	nioh	仁王
+1448440	仁王卧龙系列	wo-long	卧龙	苍天陨落
+# 怪物猎人系列
+582010	怪物猎人系列	monster-hunter	怪物猎人	怪猎	mh
+1446780	怪物猎人系列	monster-hunter	怪物猎人	怪猎	mh
+1277400	怪物猎人系列	monster-hunter	怪物猎人	怪猎	mh
+2356560	怪物猎人系列	monster-hunter	怪物猎人	怪猎	mh
+# 生化危机系列
+418370	生化危机系列	resident-evil	生化危机	biohazard
+883710	生化危机系列	resident-evil	生化危机	biohazard
+952060	生化危机系列	resident-evil	生化危机	biohazard
+1196590	生化危机系列	resident-evil	生化危机	biohazard
+2050650	生化危机系列	resident-evil	生化危机	biohazard
+# 鬼泣系列
+220440	鬼泣系列	devil-may-cry	鬼泣	dmc
+329050	鬼泣系列	devil-may-cry	鬼泣	dmc
+601150	鬼泣系列	devil-may-cry	鬼泣	dmc
+631510	鬼泣系列	devil-may-cry	鬼泣	dmc
+# 女神异闻录系列
+1382330	女神异闻录系列	persona	女神异闻录	p5
+1602010	女神异闻录系列	persona	女神异闻录	p4
+1687950	女神异闻录系列	persona	女神异闻录	p5	皇家版
+# 战地系列
+1238810	战地系列	battlefield	战地	bf
+1238820	战地系列	battlefield	战地	bf
+1238840	战地系列	battlefield	战地	bf
+1517290	战地系列	battlefield	战地	bf
+# 使命召唤系列
+1938090	使命召唤系列	call-of-duty	cod	使命召唤
+2075730	使命召唤系列	call-of-duty	cod	使命召唤
+3595230	使命召唤系列	call-of-duty	cod	使命召唤
+# 极品飞车系列
+1222680	极品飞车系列	need-for-speed	nfs	极品飞车
+1262540	极品飞车系列	need-for-speed	nfs	极品飞车
+1262560	极品飞车系列	need-for-speed	nfs	极品飞车
+1262580	极品飞车系列	need-for-speed	nfs	极品飞车
+1262600	极品飞车系列	need-for-speed	nfs	极品飞车
+1328660	极品飞车系列	need-for-speed	nfs	极品飞车
+1846380	极品飞车系列	need-for-speed	nfs	极品飞车
+# 极限竞速
+1293830	极限竞速系列	forza	极限竞速	地平线
+# 荒野大镖客
+1174180	荒野大镖客系列	red-dead	荒野大镖客	大表哥	rdr
+# GTA系列
+271590	GTA系列	grand-theft-auto	gta	侠盗猎车手
+3240220	GTA系列	grand-theft-auto	gta	侠盗猎车手
+# 命运石之门系列
+412830	命运石之门系列	steins-gate	命运石之门	石头门
+825630	命运石之门系列	steins-gate	命运石之门	石头门
+930910	命运石之门系列	steins-gate	命运石之门	石头门
+970560	命运石之门系列	steins-gate	命运石之门	石头门
+# 混沌之子
+970570	混沌之子系列	chaos-child	混沌之子	science-adv
+# 寒蝉鸣泣之时系列
+410890	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+472870	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+526490	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+577480	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+668350	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+1034940	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+1243670	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+1941110	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+2491040	寒蝉鸣泣之时系列	higurashi	寒蝉	蝉鸣之时
+# Rusty Lake系列
+435120	RustyLake系列	rusty-lake	锈湖	方块逃脱
+532110	RustyLake系列	rusty-lake	锈湖	方块逃脱
+744190	RustyLake系列	rusty-lake	锈湖	方块逃脱
+909080	RustyLake系列	rusty-lake	锈湖	方块逃脱
+1281800	RustyLake系列	rusty-lake	锈湖	方块逃脱
+1292940	RustyLake系列	rusty-lake	锈湖	方块逃脱
+# The Room系列
+288160	TheRoom系列	the-room	密室逃脱	未上锁的房间
+425580	TheRoom系列	the-room	密室逃脱	未上锁的房间
+456750	TheRoom系列	the-room	密室逃脱	未上锁的房间
+1361320	TheRoom系列	the-room	密室逃脱	未上锁的房间
+# 9-nine系列
+976390	9-nine系列	9-nine	九次九日九重色
+1033420	9-nine系列	9-nine	天色天歌天籁音
+1142830	9-nine系列	9-nine	春色春恋春熙风
+1424660	9-nine系列	9-nine	雪色雪花雪之痕
+1890120	9-nine系列	9-nine	new-episode
+# 苍之彼方系列
+1044620	苍之彼方系列	aokana	苍之彼方	苍彼
+1340130	苍之彼方系列	aokana	苍之彼方	苍彼
+2206340	苍之彼方系列	aokana	苍之彼方	苍彼
+# 爱上火车系列
+880950	爱上火车系列	maitetsu	爱上火车
+1434480	爱上火车系列	maitetsu	爱上火车
+# NEKOPARA系列
+333600	NEKOPARA系列	nekopara	巧克力与香子兰	猫娘
+385800	NEKOPARA系列	nekopara	巧克力与香子兰	猫娘
+420110	NEKOPARA系列	nekopara	巧克力与香子兰	猫娘
+602520	NEKOPARA系列	nekopara	巧克力与香子兰	猫娘
+1406990	NEKOPARA系列	nekopara	巧克力与香子兰	猫娘
+# 柚子社
+1144400	柚子社	yuzusoft	千恋万花
+2458530	柚子社	yuzusoft	魔女的夜宴
+1277930	柚子社	yuzusoft	riddle-joker
+1829980	柚子社	yuzusoft	星光咖啡馆与死神之蝶
+# KEY社
+623080	KEY社	key	键社	麻枝准	planetarian
+897220	KEY社	key	键社	麻枝准	summer-pockets
+2510770	KEY社	key	键社	麻枝准	星之终途
+2699690	KEY社	key	键社	麻枝准	harmonia
+2983350	KEY社	key	键社	麻枝准	雪圏球
+3418570	KEY社	key	键社	麻枝准	summer-pockets	reflection-blue
+# 东方Project
+851100	东方Project	touhou	东方
+1584090	东方Project	touhou	东方
+1955830	东方Project	touhou	东方
+# 炼金工房系列
+1152300	炼金工房系列	atelier	炼金工房	黄昏
+1152310	炼金工房系列	atelier	炼金工房	黄昏
+1152320	炼金工房系列	atelier	炼金工房	黄昏
+1502970	炼金工房系列	atelier	炼金工房	不可思议
+1502980	炼金工房系列	atelier	炼金工房	不可思议
+1502990	炼金工房系列	atelier	炼金工房	不可思议
+1621310	炼金工房系列	atelier	炼金工房	不可思议
+# 符文工厂系列
+1580240	符文工厂系列	rune-factory	符文工厂
+2243710	符文工厂系列	rune-factory	符文工厂
+# Fate系列
+1902690	Fate系列	fate	命运之夜	fate-samurai-remnant
+2396980	Fate系列	fate	命运之夜	stay-night
+# 勇者斗恶龙
+2175540	勇者斗恶龙系列	dragon-quest	勇者斗恶龙	怪物仙境
+# 索尼克
+1237320	索尼克系列	sonic	索尼克
+# 真·三国无双系列
+278080	三国无双系列	dynasty-warriors	三国无双	真三国无双
+968790	三国无双系列	dynasty-warriors	三国无双	真三国无双
+2384580	三国无双系列	dynasty-warriors	三国无双	真三国无双
+# 无双大蛇/无双系列
+831560	无双大蛇系列	warriors-orochi	无双大蛇
+1879330	无双大蛇系列	warriors-orochi	无双大蛇
+3178350	无双系列	warriors	无双
+# 战锤40K系列
+489630	战锤40K系列	warhammer-40k	战锤40k
+527430	战锤40K系列	warhammer-40k	战锤40k
+1042800	战锤40K系列	warhammer-40k	战锤40k
+2183900	战锤40K系列	warhammer-40k	战锤40k
+# 战锤奇幻
+552500	战锤系列	warhammer	战锤	鼠疫	vermintide
+# 全面战争
+1142710	全面战争系列	total-war	全面战争	战锤
+# 文明
+289070	文明系列	civilization	civ	文明
+# P社策略
+281990	P社策略系列	paradox	p社	群星	stellaris
+1158310	P社策略系列	paradox	p社	十字军之王	ck
+# XCOM
+268500	XCOM系列	xcom	幽浮
+# 英雄连
+231430	英雄连系列	company-of-heroes	英雄连
+# 星际边境
+211820	星际边境系列	starbound	星际边境
+367540	星际边境系列	starbound	星际边境
+# 深岩银河系列
+548430	深岩银河系列	deep-rock-galactic	深岩银河	drg
+2321470	深岩银河系列	deep-rock-galactic	深岩银河	drg
+# 冰汽时代系列
+323190	冰汽时代系列	frostpunk	冰汽时代
+1601580	冰汽时代系列	frostpunk	冰汽时代
+# 纪元系列
+916440	纪元系列	anno	纪元
+1281630	纪元系列	anno	纪元
+# 胡闹厨房系列
+448510	胡闹厨房系列	overcooked	胡闹厨房	分手厨房
+728880	胡闹厨房系列	overcooked	胡闹厨房	分手厨房
+# 森林系列
+242760	森林系列	the-forest	森林
+1326470	森林系列	sons-of-the-forest	森林	森林之子
+# 双人合作系列
+1426210	双人合作系列	it-takes-two	双人成行
+2001120	双人合作系列	split-fiction	双影奇境
+# 真人快打系列
+307780	真人快打系列	mortal-kombat	真人快打	mk
+976310	真人快打系列	mortal-kombat	真人快打	mk
+# 不义联盟系列
+242700	不义联盟系列	injustice	不义联盟
+627270	不义联盟系列	injustice	不义联盟
+# 拳皇系列
+222420	拳皇系列	king-of-fighters	kof	拳皇
+1498570	拳皇系列	king-of-fighters	kof	拳皇
+# 龙珠系列
+454650	龙珠系列	dragon-ball	龙珠	七龙珠
+678950	龙珠系列	dragon-ball	龙珠	七龙珠
+851850	龙珠系列	dragon-ball	龙珠	七龙珠
+1276760	龙珠系列	dragon-ball	龙珠	七龙珠
+# 火影忍者
+349040	火影忍者系列	naruto	火影忍者	终极风暴
+# 漫威系列
+1088850	漫威系列	marvel	漫威
+1817070	漫威系列	marvel	漫威
+2767030	漫威系列	marvel	漫威
+# 星球大战系列
+1172380	星球大战系列	star-wars	星球大战	星战
+1237950	星球大战系列	star-wars	星球大战	星战
+1774580	星球大战系列	star-wars	星球大战	星战
+# 龙腾世纪系列
+47810	龙腾世纪系列	dragon-age	龙腾世纪
+1222690	龙腾世纪系列	dragon-age	龙腾世纪
+1238040	龙腾世纪系列	dragon-age	龙腾世纪
+# 质量效应
+1328670	质量效应系列	mass-effect	质量效应
+# 死亡岛系列
+383150	死亡岛系列	dead-island	死亡岛
+383180	死亡岛系列	dead-island	死亡岛
+934700	死亡岛系列	dead-island	死亡岛
+# 消逝的光芒系列
+239140	消逝的光芒系列	dying-light	消逝的光芒
+534380	消逝的光芒系列	dying-light	消逝的光芒
+# 中土世界
+356190	中土世界系列	middle-earth	中土世界	暗影魔多
+# 机战佣兵
+1888160	装甲核心系列	armored-core	装甲核心	机战佣兵
+# 霍格沃茨
+990080	霍格沃茨系列	hogwarts	霍格沃茨
+# 上古卷轴
+489830	上古卷轴系列	elder-scrolls	上古卷轴	天际	skyrim
+# 泰坦之旅
+475150	泰坦之旅系列	titan-quest	泰坦之旅
+# 火炬之光
+2315040	火炬之光系列	torchlight	火炬之光
+# 命运2
+1085660	命运系列	destiny	命运2
+# WRC系列
+458770	WRC系列	wrc	世界拉力锦标赛
+621830	WRC系列	wrc	世界拉力锦标赛
+1004750	WRC系列	wrc	世界拉力锦标赛
+1267540	WRC系列	wrc	世界拉力锦标赛
+1462810	WRC系列	wrc	世界拉力锦标赛
+# DiRT尘埃系列
+310560	尘埃系列	dirt	尘埃	迪尔蒂
+421020	尘埃系列	dirt	尘埃	迪尔蒂
+690790	尘埃系列	dirt	尘埃	迪尔蒂
+# 飙酷车神
+646910	飙酷车神系列	the-crew	飙酷车神
+# 极限国度
+2290180	极限国度系列	riders-republic	极限国度
+# 模拟卡车系列
+227300	模拟卡车系列	truck-simulator	欧卡	欧洲卡车模拟
+270880	模拟卡车系列	truck-simulator	美卡	美国卡车模拟
+# 星露谷
+413150	星露谷系列	stardew	星露谷	星露谷物语
+# 缺氧
+457140	缺氧系列	oxygen-not-included	缺氧
+# 城市天际线
+255710	城市天际线系列	cities-skylines	城市天际线	天际线
+# 杀戮尖塔
+646570	杀戮尖塔系列	slay-the-spire	杀戮尖塔	尖塔
+# 挺进地牢
+311690	挺进地牢系列	enter-the-gungeon	挺进地牢	地牢
+# 死亡细胞
+588650	死亡细胞系列	dead-cells	死亡细胞
+# 哈迪斯
+1145360	哈迪斯系列	hades	哈迪斯
+# 蔚蓝
+504230	蔚蓝系列	celeste	蔚蓝
+# 奥日系列
+261570	奥日系列	ori	奥日	精灵与森林
+387290	奥日系列	ori	奥日	精灵与森林
+1057090	奥日系列	ori	奥日	精灵与森林
+# 机械迷城
+40700	机械迷城系列	machinarium	机械迷城
+# 羞辱
+205100	羞辱系列	dishonored	羞辱	耻辱
+# 神秘海域
+1659420	神秘海域系列	uncharted	神秘海域
+# 最后生还者
+1888930	最后生还者系列	the-last-of-us	最后生还者
+# 底特律/暴雨
+1222140	QuanticDream交互电影	detroit	底特律	化身为人
+960910	QuanticDream交互电影	heavy-rain	暴雨
+# 黑神话
+2358720	黑神话悟空	black-myth	黑神话	悟空
+# 帕鲁
+1623730	帕鲁系列	palworld	幻兽帕鲁	帕鲁
+# 潜水员戴夫
+1868140	潜水员戴夫系列	dave-the-diver	潜水员戴夫
+# 星之海
+1244090	星之海系列	sea-of-stars	星之海
+# 歧路旅人系列
+921570	歧路旅人系列	octopath-traveler	歧路旅人	八方旅人
+1971650	歧路旅人系列	octopath-traveler	歧路旅人	八方旅人
+# 小丑牌
+2379780	小丑牌系列	balatro	小丑牌
+# 米塔
+2527500	米塔系列	miside	米塔
+# Trine系列
+35700	Trine系列	trine	三位一体
+35720	Trine系列	trine	三位一体
+319910	Trine系列	trine	三位一体
+690640	Trine系列	trine	三位一体
+# 狙击手幽灵战士系列
+34870	狙击手幽灵战士系列	sniper-ghost-warrior	狙击手幽灵战士	幽灵战士
+368070	狙击手幽灵战士系列	sniper-ghost-warrior	狙击手幽灵战士	幽灵战士
+1338770	狙击手幽灵战士系列	sniper-ghost-warrior	狙击手幽灵战士	幽灵战士
+# 狙击精英系列
+247910	狙击精英系列	sniper-elite	狙击精英
+312660	狙击精英系列	sniper-elite	狙击精英
+# 暗黑血统系列
+50620	暗黑血统系列	darksiders	暗黑血统
+462780	暗黑血统系列	darksiders	暗黑血统
+710920	暗黑血统系列	darksiders	暗黑血统
+# 逃生系列
+238320	逃生系列	outlast	逃生
+414700	逃生系列	outlast	逃生
+1304930	逃生系列	outlast	逃生
+# 影子武士系列
+233130	影子武士系列	shadow-warrior	影子武士
+324800	影子武士系列	shadow-warrior	影子武士
+1036890	影子武士系列	shadow-warrior	影子武士
+# 看门狗系列
+243470	看门狗系列	watch-dogs	看门狗
+447040	看门狗系列	watch-dogs	看门狗
+# 小小梦魇系列
+424840	小小梦魇系列	little-nightmares	小小梦魇
+860510	小小梦魇系列	little-nightmares	小小梦魇
+2149010	小小梦魇系列	little-nightmares	小小梦魇
+# 奇异人生系列
+319630	奇异人生系列	life-is-strange	奇异人生	奇妙人生
+1874000	奇异人生系列	life-is-strange	奇异人生	奇妙人生
+# SteamWorld系列
+252410	SteamWorld系列	steamworld	蒸汽世界
+322190	SteamWorld系列	steamworld	蒸汽世界
+571310	SteamWorld系列	steamworld	蒸汽世界
+# DISTRAINT系列
+395170	DISTRAINT系列	distraint	恐怖回忆
+743390	DISTRAINT系列	distraint	恐怖回忆
+# 合金弹头系列
+312610	合金弹头系列	metal-slug	合金弹头	越南大战
+# 神力科莎系列
+244210	神力科莎系列	assetto-corsa	神力科莎	赛车计划
+# 王国保卫战系列
+246420	王国保卫战系列	kingdom-rush	王国保卫战	皇家守卫军
+# 彩虹六号系列
+359550	彩虹六号系列	rainbow-six	彩虹六号	r6
+# 影子战术系列
+418240	影子战术系列	shadow-tactics	影子战术
+1579380	影子战术系列	shadow-tactics	影子战术
+# 极限运动系列(Steep 独立)
+460920	极限运动系列	steep	极限巅峰
