@@ -106,6 +106,15 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .card .name.has-en { padding: 8px 10px 2px; }
+  .card .en {
+    padding: 0 10px 8px;
+    font-size: 11px;
+    color: var(--text-dim);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   .card .owner {
     padding: 0 10px 8px;
     font-size: 11px;
@@ -176,6 +185,11 @@
     });
   }
 
+  // 判断字符串是否含中文(用于卡片名:中文为主,英文小字)
+  function hasCJK(s) {
+    return /[一-鿿㐀-䶿]/.test(s || '');
+  }
+
   // 判断游戏是否匹配关键词:name / cn / en / aliases / series 任一命中即可
   function matchGame(g, kw) {
     if (g.name && g.name.toLowerCase().indexOf(kw) >= 0) return true;
@@ -239,10 +253,25 @@
       };
       card.appendChild(img);
 
+      // 卡片名:有中文显示中文(仅当有真实英文名时附英文小字),只有英文就显示英文
+      var mainName, enSub = '';
+      if (hasCJK(g.cn)) {
+        mainName = g.cn;
+        if (g.en && !hasCJK(g.en) && g.en !== g.cn) enSub = g.en;
+      } else {
+        mainName = g.cn || g.name;
+      }
       var name = document.createElement('div');
       name.className = 'name';
-      name.textContent = g.cn && g.cn !== g.name ? g.cn + ' / ' + g.name : g.name;
+      name.textContent = mainName;
       card.appendChild(name);
+      if (enSub) {
+        name.className += ' has-en';
+        var en = document.createElement('div');
+        en.className = 'en';
+        en.textContent = enSub;
+        card.appendChild(en);
+      }
 
       var owners = Array.isArray(g.owners) ? g.owners : (g.owner ? [g.owner] : []);
       if (owners.length) {
