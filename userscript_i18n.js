@@ -15,7 +15,7 @@
   'use strict';
 
   var DELAY_MS = 1600; // 限流间隔(Steam API 约 200 请求/5分钟/IP)
-  var BATCH = 20;      // 每批 AppID 数(批量请求加速:821 款双语言约 5 分钟内)
+  var BATCH = 20; // 每批 AppID 数(批量请求加速:821 款双语言约 5 分钟内)
   var STORE = 'i18n_appids'; // GM_setValue 存储键,脚本自动记住 AppID
 
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
@@ -49,10 +49,10 @@
       try {
         var j = JSON.parse(await xhr(url));
         var out = {};
-        ids.forEach(function (id) {
-          var item = j[String(id)];
-          out[id] = (item && item.success && item.data) ? item.data.name : null;
-        });
+        for (var i = 0; i < ids.length; i++) {
+          var item = j[String(ids[i])];
+          out[ids[i]] = (item && item.success && item.data) ? item.data.name : null;
+        }
         return out;
       } catch (e) {
         if (attempt < 3) await sleep(DELAY_MS * 2);
