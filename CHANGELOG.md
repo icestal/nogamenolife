@@ -4,7 +4,7 @@
 
 ## 2026-08-10 · 油猴脚本 v2.0 重写:通用版(不写死 AppID)
 - 废弃 v1.x 内嵌 821 款 id+name 数组的做法。改为:**运行时弹窗输入 AppID**,`GM_setValue` 持久化,二次使用回车沿用,不用改代码。
-- 入口 `@match` 扩展为 steamdb.info / store.steampowered.com / steamcommunity.com 三域,默认建议在 steamdb 页面运行。
+- 入口 `@match` 含 store.steampowered.com / steamcommunity.com / steamdb.info 三域,默认在 **store.steampowered.com** 运行(数据同源、无跨域最顺)。
 - 改用 `GM_xmlhttpRequest` 跨域请求 Steam 官方 API(appdetails,`filters=basic`),不受 CORS 限制,任意页面通用。
 - 批量请求加速:每批 20 个 AppID,821 款双语言约 5 分钟内完成。
 - 配套新增 `appids_all.txt`(821 个 AppID,首次全量粘入用);`油猴执行说明.md` 同步更新。
