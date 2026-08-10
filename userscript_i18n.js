@@ -8,7 +8,6 @@
 // @match        https://steamcommunity.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
 (function () {
@@ -30,13 +29,18 @@
     return out;
   }
 
-  // GM_xmlhttpRequest 封装成 Promise:跨域请求不受 CORS 限制,通用任意页面
+  // 原生 fetch 封装成 Promise:脚本在 store 页运行,api/appdetails 是同域,不需要 GM_xmlhttpRequest
+  // (改用 fetch 可避开篡改猴"权限受限"导致 GM_xmlhttpRequest 全部失败的坑)
   function xhr(url) {
     return new Promise(function (resolve, reject) {
-      GM_xmlhttpRequest({
-        method: 'GET', url: url, timeout: 15000,
-        onload: function (r) { resolve(r.responseText); },
-        onerror: reject, ontimeout: reject
+      var ctrl = new AbortController();
+      var timer = setTimeout(function () { ctrl.abort(); }, 30000);
+      fetch(url, { signal: ctrl.signal }).then(function (r) {
+        return r.text();
+      }).then(function (t) {
+        clearTimeout(timer); resolve(t);
+      }).catch(function (e) {
+        clearTimeout(timer); reject(e);
       });
     });
   }
@@ -44,7 +48,7 @@
   // 抓一批 AppID 的中文(cn)或英文(en)名,失败自动重试 3 次
   async function fetchBatch(ids, lang) {
     var url = 'https://store.steampowered.com/api/appdetails?appids=' + ids.join(',') +
-              '&filters=basic' + (lang === 'cn' ? '&l=schinese' : '&l=english');
+              (lang === 'cn' ? '&l=schinese' : '&l=english');
     for (var attempt = 1; attempt <= 3; attempt++) {
       try {
         var j = JSON.parse(await xhr(url));

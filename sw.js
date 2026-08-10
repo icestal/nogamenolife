@@ -1,6 +1,6 @@
 // 只买不玩康复中心 · Service Worker
 // 作用：让站点可"安装到主屏幕"，并提供离线缓存
-const CACHE = 'gamerehab-v3';
+const CACHE = 'gamerehab-v4';
 const SHELL = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', function (e) {

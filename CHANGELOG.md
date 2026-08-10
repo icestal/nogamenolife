@@ -2,6 +2,28 @@
 
 > 每次推送前在此追加一条(最新在上)。数据类更新顺手记游戏数量变化。
 
+## 2026-08-10 · 小黑盒补中文 + 剔除6款工具 + 封面回退 + 共享误标修复
+- **中文名补全 388 款**:发现小黑盒 `share_game_detail` 的 302 跳转 `title` 参数可当查询通道(无登录/无token/无批量接口),821 款全量实测零失败。Steam 官方未本地化的游戏(空洞骑士/半条命2等)靠它补上中文,cn 含中文 345→731。
+- **剔除 6 款非游戏**:tModLoader / 3DMark / Blender / Wallpaper Engine / Jackbox Megapicker / 虚拟桌宠模拟器(工具·软件),总量 **821→815**。被剔除清单存 `games_tools.tsv` 备查,恢复可查回。
+- **修复可共享误标**:`exclude_reason=3`(Steam 家庭共享排除的免费游戏)不再亮"可共享"角标,5 款免费游戏(未转变者/奇异人生等)修正。
+- **封面回退**:部分新上架 app 无 `header.jpg`,加载失败自动回退 `library_hero.jpg`(实测 29 款缺 header、24 款可救,5 款双缺仍占位),`sw.js` v3→v4。
+- `merge.py`:cn 改"第一个含中文候选"(family 官方中文→i18n 小黑盒→name);`share` 需排除 exclude=3。
+
+## 2026-08-10 · 821 款中英文名全量 + 家庭组可共享标记
+- **中英文名全量抓齐**:F12 版 `userscript_i18n_f12.js`(单请求+断点续传+限流自适应),821 款中英文一步到位,`games_i18n.tsv` 全覆盖(缺 13 款下架/临时)。
+  - 注:批量 `appids=440,570` 已被 Steam 拒绝(400),只能逐个请求;间隔 1800ms 保安全,429 自动冷却 5 分钟+永久放慢。
+- **家庭组 API 全字段版** `userscript_family_f12.js`:`family_library_full.tsv` = appid/中文名/英文名/owners(steamid 区分成员)/exclude_reason。一次拉全组可共享库,秒级。
+- **merge.py 重构**:以 `appids_all.txt`(821 款)为总量基准 → family_library 优先给"可共享"+owners → games_i18n 补缺 → games_raw 兜底 name。
+- **index.html**:卡片加绿色「可共享」角标(在家庭组共享内的显示);不可共享不标注,避免误导(小寒未入组的游戏等她入组后自动变可共享)。
+- 全库 **821 款,531 款可共享**;不可共享 290 款 = 小寒未入组部分 + 第三方账户(育碧/EA/R星/动视) + 免费在线游戏。
+
+## 2026-08-10 · 家庭组 API 拉取链路验证(备用)
+- 验证了创意方法:登录态自动拿 webapi_token + IFamilyGroupsService 两个接口,一次拉全共享库、`language=schinese` 直接给中文名,替代"各成员拉库 + 抓 i18n"两步。
+- 实测(老胡+ZZZ 两人组):539 款共享库,中文名一步到位。
+- **注意:小寒未加入家庭组,当前非全量**;小寒入组后一个成员跑一次即得完整库。
+- 文件:`fetch_family.py`(本机)、`userscript_family_f12.js`(F12 版,已验证可跑)、`userscript_family.js`(油猴版,备用)。
+- 本次数据更新仍走暴力猴 i18n 流程(`appids_all.txt` 821 款)。
+
 ## 2026-08-10 · 油猴脚本 v2.0 重写:通用版(不写死 AppID)
 - 废弃 v1.x 内嵌 821 款 id+name 数组的做法。改为:**运行时弹窗输入 AppID**,`GM_setValue` 持久化,二次使用回车沿用,不用改代码。
 - 入口 `@match` 含 store.steampowered.com / steamcommunity.com / steamdb.info 三域,默认在 **store.steampowered.com** 运行(数据同源、无跨域最顺)。

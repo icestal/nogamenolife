@@ -88,6 +88,7 @@
     overflow: hidden;
     border: 1px solid var(--border);
     cursor: pointer;
+    position: relative;
     transition: transform .15s ease;
   }
   .card:active { transform: scale(0.97); }
@@ -97,6 +98,12 @@
     display: block;
     object-fit: cover;
     background: var(--bg-input);
+  }
+  .card .share-badge {
+    position: absolute; top: 6px; right: 6px;
+    background: rgba(63,185,80,0.92); color: #fff;
+    font-size: 10px; line-height: 1; padding: 3px 6px;
+    border-radius: 4px; font-weight: 600;
   }
   .card .name {
     padding: 8px 10px;
@@ -174,9 +181,10 @@
   var GAMES = [];
   var SITE = {};
 
-  // 封面图：Steam 官方 CDN，按 appid 外链
-  function coverUrl(id) {
-    return 'https://cdn.cloudflare.steamstatic.com/steam/apps/' + id + '/header.jpg';
+  // 封面图：Steam 官方 CDN，按 appid 外链；variant='hero' 为库内大图(部分新上架 app 无 header.jpg 时的回退)
+  function coverUrl(id, variant) {
+    var file = variant === 'hero' ? 'library_hero.jpg' : 'header.jpg';
+    return 'https://cdn.cloudflare.steamstatic.com/steam/apps/' + id + '/' + file;
   }
 
   function escapeHtml(s) {
@@ -247,11 +255,24 @@
       img.alt = g.name;
       img.src = coverUrl(g.id);
       img.onerror = function () {
-        // 封面图加载失败时用占位块
+        // 首次失败回退到库内大图(部分新上架 app 无 header.jpg)；再失败才用占位块，避免死循环
+        if (!this.dataset.fallback) {
+          this.dataset.fallback = '1';
+          this.src = coverUrl(g.id, 'hero');
+          return;
+        }
         this.style.display = 'none';
         this.parentNode.insertBefore(placeholder(this), this.nextSibling);
       };
       card.appendChild(img);
+
+      // 可共享徽标(在家庭组共享给全家的;不可共享的不标,避免误导)
+      if (g.share) {
+        var badge = document.createElement('div');
+        badge.className = 'share-badge';
+        badge.textContent = '可共享';
+        card.appendChild(badge);
+      }
 
       // 卡片名:有中文显示中文(仅当有真实英文名时附英文小字),只有英文就显示英文
       var mainName, enSub = '';
