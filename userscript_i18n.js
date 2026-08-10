@@ -102,11 +102,11 @@
     for (var b = 0; b < batches.length; b++) {
       var batch = batches[b];
       var cn = await fetchBatch(batch, 'cn');
-      if (cn) { for (var k in cn) cnAll[k] = cn[k]; } else { failed.push(batch); }
+      if (cn) { Object.assign(cnAll, cn); } else { failed.push(batch); }
       await sleep(DELAY_MS);
 
       var en = await fetchBatch(batch, 'en');
-      if (en) { for (var k in en) enAll[k] = en[k]; } else { failed.push(batch); }
+      if (en) { Object.assign(enAll, en); } else { failed.push(batch); }
       await sleep(DELAY_MS);
 
       done += batch.length;
