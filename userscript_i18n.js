@@ -1,118 +1,133 @@
 // ==UserScript==
-// @name         只买不玩康复中心 · 中英文名抓取
+// @name         Steam 游戏中英文名批量抓取(通用版)
 // @namespace    icestal
-// @version      1.1
-// @description  抓取 appid 的中英文名,产出 games_i18n.tsv 下载。ONLY_APPIDS 留空=全量,填了=只抓这几款(增量)
+// @version      2.0
+// @description  弹窗输入 AppID 列表→批量抓 Steam 官方中英文名→下载 TSV。AppID 用 GM_setValue 持久化,二次使用回车沿用,无需改代码。
+// @match        https://steamdb.info/*
 // @match        https://store.steampowered.com/*
 // @match        https://steamcommunity.com/*
-// @grant        none
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
 (function () {
   'use strict';
-  // 内嵌 appid+name 全量数据(821 款),不依赖 GitHub 连通性
-  var GAMES = [[220, "Half-Life 2"], [320, "Half-Life 2: Deathmatch"], [360, "Half-Life Deathmatch: Source"], [500, "Left 4 Dead"], [550, "Left 4 Dead 2"], [730, "Counter-Strike 2"], [2280, "DOOM + DOOM II"], [6860, "Hitman: Blood Money"], [7000, "Tomb Raider: Legend"], [8000, "Tomb Raider: Anniversary"], [8140, "Tomb Raider: Underworld"], [9050, "DOOM 3"], [9070, "DOOM 3: Resurrection of Evil"], [13520, "Far Cry"], [15100, "Assassin's Creed"], [19900, "Far Cry 2"], [20900, "The Witcher: Enhanced Edition"], [20920, "The Witcher 2: Assassins of Kings Enhanced Edition"], [21000, "LEGO® Batman™: The Videogame"], [22370, "Fallout 3 - Game of the Year Edition"], [22380, "Fallout: New Vegas"], [29900, "Dark Sector"], [33230, "刺客信条2"], [34870, "Sniper Ghost Warrior 2"], [35140, "Batman: Arkham Asylum GOTY Edition"], [35700, "Trine"], [35720, "Trine 2"], [38400, "Fallout"], [38410, "Fallout 2"], [38420, "Fallout Tactics"], [39140, "FINAL FANTASY VII (2013)"], [40700, "机械迷城 (Machinarium)"], [45760, "Ultra Street Fighter IV"], [47810, "Dragon Age: Origins - Ultimate Edition"], [48000, "LIMBO"], [48190, "刺客信条：兄弟会"], [49520, "Borderlands 2"], [50130, "Mafia II (Classic)"], [50620, "Darksiders"], [105600, "Terraria"], [108600, "Project Zomboid"], [113200, "The Binding of Isaac"], [200260, "Batman: Arkham City GOTY"], [201870, "刺客信条：启示录"], [203140, "Hitman: Absolution"], [203160, "Tomb Raider"], [204360, "Castle Crashers"], [204450, "Call of Juarez Gunslinger"], [205100, "Dishonored"], [205930, "Hitman: Sniper Challenge"], [206440, "To the Moon《去月球》"], [207320, "Ys: The Oath in Felghana"], [207350, "Ys Origin"], [208200, "DOOM 3: BFG Edition"], [208650, "Batman™: Arkham Knight"], [209000, "Batman™: Arkham Origins"], [211820, "Starbound"], [213330, "LEGO® Batman™ 2: DC Super Heroes"], [214340, "Deponia"], [214510, "LEGO® The Lord of the Rings™"], [218620, "PAYDAY 2"], [219740, "饥荒"], [220240, "Far Cry® 3"], [220440, "DmC Devil May Cry"], [222420, "THE KING OF FIGHTERS '98 ULTIMATE MATCH FINAL EDITION"], [223470, "POSTAL 2"], [223810, "Ys I"], [223850, "3DMark"], [223870, "Ys II"], [224260, "No More Room in Hell"], [225540, "Just Cause 3"], [227300, "Euro Truck Simulator 2"], [230230, "Divinity: Original Sin (Classic)"], [230410, "Warframe 星际战甲"], [231430, "Company of Heroes 2"], [232090, "Killing Floor 2"], [233130, "影子武士"], [233270, "Far Cry® 3 Blood Dragon"], [233450, "Prison Architect"], [233860, "Kenshi"], [236430, "DARK SOULS™ II"], [238320, "Outlast"], [239140, "Dying Light"], [242700, "Injustice: Gods Among Us Ultimate Edition"], [242760, "The Forest"], [243470, "Watch_Dogs"], [244210, "神力科莎 Assetto Corsa"], [246420, "Kingdom Rush"], [247080, "Crypt of the NecroDancer"], [247910, "Sniper Elite: Nazi Zombie Army 2"], [249130, "LEGO® MARVEL Super Heroes"], [250900, "The Binding of Isaac: Rebirth"], [251150, "The Legend of Heroes: Trails in the Sky"], [251290, "The Legend of Heroes: Trails in the Sky SC"], [251570, "7 Days to Die"], [252410, "SteamWorld Dig"], [255520, "Viscera Cleanup Detail: Shadow Warrior"], [255710, "Cities: Skylines"], [261550, "Mount & Blade II: Bannerlord"], [261570, "Ori and the Blind Forest"], [261640, "Borderlands: The Pre-Sequel"], [265930, "Goat Simulator"], [267530, "The LEGO® Movie - Videogame"], [268500, "XCOM 2"], [270880, "American Truck Simulator"], [271590, "Grand Theft Auto V 传承版"], [278080, "真・三国无双７ with 猛将传"], [281990, "Stellaris"], [282070, "This War of Mine"], [283270, "Jagged Alliance Gold"], [283640, "Salt and Sanctuary"], [285160, "LEGO® The Hobbit™"], [286690, "地铁2033 重制版"], [287390, "地铁：最后的曙光 重制版"], [288160, "The Room"], [289070, "Sid Meier's Civilization VI"], [289690, "Lara Croft and the Temple of Osiris"], [292030, "巫师 3：狂猎"], [297130, "Titan Souls"], [298110, "Far Cry 4"], [299480, "Rogue Stormers"], [304430, "INSIDE"], [304930, "Unturned"], [305620, "The Long Dark"], [307690, "Sleeping Dogs: Definitive Edition"], [307780, "Mortal Kombat X"], [310560, "DiRT Rally"], [311690, "挺进地牢"], [312200, "Chasm"], [312520, "雨世界"], [312540, "Ys VI: The Ark of Napishtim"], [312610, "METAL SLUG X"], [312660, "Sniper Elite 4"], [313690, "LEGO® Batman™ 3: Beyond Gotham"], [315210, "自杀小队：消灭正义联盟"], [315810, "eden*"], [319630, "Life is Strange™"], [319910, "Trine 3: The Artifacts of Power"], [322190, "SteamWorld Heist"], [322330, "饥荒联机版"], [322990, "Black Viper: Sophia's Fate"], [323190, "冰汽时代"], [324800, "影子武士2"], [329050, "Devil May Cry 4 Special Edition"], [333600, "NEKOPARA Vol. 1"], [333930, "Dirty Bomb"], [335300, "DARK SOULS™ II: Scholar of the First Sin"], [347620, "高考恋爱一百天"], [349040, "火影忍者 疾风传 终极风暴4"], [351910, "Valhalla Hills"], [351920, "疯狂机器3 - Crazy Machines 3"], [352400, "LEGO® Jurassic World"], [355180, "Codename CURE"], [356190, "Middle-earth™: Shadow of War™"], [359550, "彩虹六号：围攻"], [360430, "Mafia III: Definitive Edition"], [362890, "Black Mesa"], [365670, "Blender"], [367520, "Hollow Knight"], [367540, "Starbound - Unstable"], [368070, "Sniper Ghost Warrior 3"], [368340, "CrossCode"], [371660, "Far Cry Primal"], [373420, "神界：原罪增强版"], [374320, "DARK SOULS™ III"], [377160, "Fallout 4"], [379430, "Kingdom Come: Deliverance"], [379720, "DOOM"], [383150, "Dead Island Definitive Edition"], [383180, "Dead Island Riptide Definitive Edition"], [385800, "NEKOPARA Vol. 0"], [387290, "Ori and the Blind Forest: Definitive Edition"], [391220, "Rise of the Tomb Raider"], [391540, "Undertale"], [395170, "DISTRAINT: Deluxe Edition"], [397270, "A Kiss For The Petals - Remembering How We Met"], [397540, "无主之地3"], [402180, "Sakura Swim Club"], [405310, "LEGO® MARVEL's Avengers"], [407330, "Sakura Dungeon"], [410890, "Higurashi When They Cry Hou - Ch.2 Watanagashi"], [412020, "地铁：离乡"], [412830, "STEINS;GATE"], [413150, "Stardew Valley"], [413410, "Danganronpa: Trigger Happy Havoc"], [413420, "Danganronpa 2: Goodbye Despair"], [414340, "Hellblade: Senua's Sacrifice"], [414700, "Outlast 2"], [418240, "Shadow Tactics: Blades of the Shogun"], [418370, "Resident Evil 7 Biohazard"], [418670, "Pankapu"], [420110, "NEKOPARA Vol. 2"], [421020, "DiRT 4"], [421660, "Harmonia"], [424840, "Little Nightmares"], [425580, "The Room Two"], [428550, "Momodora: Reverie Under the Moonlight"], [430960, "露西 -她所期望的一切-"], [431710, "Space Pilgrim Episode II: Epsilon Indi"], [431960, "Wallpaper Engine：壁纸引擎"], [433340, "Slime Rancher"], [433850, "Z1 Battle Royale"], [435120, "Rusty Lake Hotel"], [435150, "神界：原罪2 - 终极版"], [436670, "The Legend of Heroes: Trails in the Sky the 3rd"], [438490, "GOD EATER 2 Rage Burst"], [438640, "LEGO® STAR WARS™: The Force Awakens"], [439700, "H1Z1: Test Server"], [442070, "Drawful 2"], [447040, "Watch_Dogs 2"], [448510, "Overcooked"], [454650, "DRAGON BALL XENOVERSE 2"], [456750, "The Room Three"], [457140, "缺氧"], [458770, "WRC 6"], [460790, "Bayonetta"], [460810, "Vanquish"], [460870, "GOD EATER RESURRECTION"], [460920, "Steep"], [460950, "武士 零"], [462780, "Darksiders Warmastered Edition"], [466130, "白色情人节：恐怖学校"], [466240, "黑暗逃生"], [466560, "Northgard: Definitive Edition"], [468920, "终极钓鱼模拟器"], [472870, "Higurashi When They Cry Hou - Ch.3 Tatarigoroshi"], [473460, "回忆忘却之匣"], [474960, "Quantum Break"], [475150, "Titan Quest Anniversary Edition"], [477160, "人类一败涂地 / Human Fall Flat"], [485510, "仁王 Complete Edition"], [487430, "KARAKARA"], [489630, "Warhammer 40,000: Gladius - Relics of War"], [489830, "The Elder Scrolls V: Skyrim Special Edition"], [493340, "过山车之星"], [495420, "State of Decay 2"], [496350, "sppl-魔女爱丽丝 第一章 春日已至1"], [504230, "Celeste"], [513710, "人渣"], [518030, "Aim Hero"], [518790, "《猎人：荒野的召唤™》"], [524220, "NieR:Automata™"], [526490, "Higurashi When They Cry Hou - Ch.4 Himatsubushi"], [527430, "Warhammer 40,000: Inquisitor - Martyr"], [532110, "Rusty Lake: Roots"], [534380, "消逝的光芒2: 重装上阵版"], [538680, "The Legend of Heroes: Trails of Cold Steel"], [539660, "ChronoClock"], [544610, "Battlestar Galactica Deadlock"], [548430, "深岩银河"], [552280, "游魂2-you're the only one-"], [552500, "Warhammer: Vermintide 2"], [552520, "Far Cry 5"], [553420, "TUNIC"], [553640, "ICEY"], [553850, "HELLDIVERS™ 2"], [555000, "GOAT OF DUTY"], [555950, "Danganronpa Another Episode: Ultra Despair Girls"], [556130, "Drones, The Human Condition"], [557600, "Gorogoa"], [564050, "Bud Spencer & Terence Hill - Slaps And Beans"], [567640, "新枪弹辩驳V3 大家自相残杀的新学期"], [570770, "古剑奇谭二(GuJian2)"], [570780, "古剑奇谭(GuJian)"], [570940, "DARK SOULS™: REMASTERED"], [571310, "SteamWorld Dig 2"], [577480, "Higurashi When They Cry Hou - Ch.5 Meakashi"], [578080, "PUBG: BATTLEGROUNDS"], [578330, "LEGO® City Undercover"], [579180, "Ys VIII: Lacrimosa of Dana"], [582010, "Monster Hunter: World"], [582160, "刺客信条：起源"], [587100, "Ys SEVEN"], [587110, "Ys: Memories of Celceta"], [588650, "Dead Cells"], [599140, "Graveyard Keeper"], [601150, "Devil May Cry 5"], [602520, "NEKOPARA Vol. 3"], [606150, "Moonlighter"], [609320, "FAR: Lone Sails"], [610190, "無雙☆群星大會串"], [610370, "Desperados III"], [610570, "Paradox Soul"], [618140, "Barro"], [621830, "WRC 7"], [623080, "planetarian HD"], [627270, "Injustice™ 2"], [631510, "Devil May Cry HD Collection"], [632470, "Disco Elysium"], [635730, "Dragonia"], [635850, "Sentience: The Android's Tale"], [640590, "The LEGO® NINJAGO® Movie Video Game"], [644560, "Mirror"], [644570, "Material Girl"], [646570, "Slay the Spire"], [646910, "The Crew 2"], [647830, "LEGO® MARVEL Super Heroes 2"], [648100, "Raging Loop"], [648580, "428 Shibuya Scramble"], [665180, "Dark Elf"], [668350, "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi"], [668580, "原子之心"], [668630, "Tricolour Lovestory"], [674750, "Yet Another Zombie Defense HD"], [678950, "DRAGON BALL FighterZ"], [678960, "CODE VEIN"], [680320, "The Heiress"], [683320, "GRIS"], [686190, "Killing Time"], [690640, "Trine 4: The Nightmare Prince"], [690790, "DiRT Rally 2.0"], [691150, "Saku Saku: Love Blooms with the Cherry Blossoms"], [692850, "Bloodstained: Ritual of the Night"], [694280, "Zombie Army 4: Dead War"], [703080, "动物园之星"], [704850, "Thief Simulator"], [707010, "Will To Live Online"], [710920, "Darksiders Genesis"], [711990, "Elise the Devil"], [712840, "King Exit"], [719430, "Taima Miko Yuugi"], [720280, "Fox Hime"], [728880, "Overcooked! 2"], [736190, "中国式家长"], [738520, "呼吸边缘"], [740080, "Deadly Days"], [740130, "破晓传奇"], [740260, "Crimson Imprint plus -Nonexistent Christmas-"], [743390, "DISTRAINT 2"], [744190, "Rusty Lake Paradise"], [744900, "Dead Frontier 2"], [747350, "Hellblade: Senua's Sacrifice VR Edition"], [748490, "The Legend of Heroes: Trails of Cold Steel II"], [749520, "樱之杜†净梦者"], [750920, "Shadow of the Tomb Raider"], [755790, "无限法则"], [757320, "Atomicrops"], [758090, "茂伸奇谈"], [758190, "龙崖"], [760160, "Vampire: The Masquerade - Bloodhunt"], [760620, "Deiland"], [761700, "Your Diary +"], [762930, "sppl-魔女爱丽丝 第一章 春日已至2"], [774361, "Blasphemous"], [780310, "The Riftbreaker 银河破裂者"], [782330, "DOOM Eternal"], [787100, "Homeworld Defense"], [787480, "Phoenix Wright: Ace Attorney Trilogy"], [788100, "霓虹深渊"], [797410, "Headsnatchers"], [802870, "The Ditzy Demons Are in Love With Me"], [812560, "CROSS†CHANNEL: Steam Edition"], [814370, "怪物圣所"], [814380, "Sekiro™: Shadows Die Twice"], [815370, "绿色地狱"], [818320, "LEGO® The Incredibles"], [825630, "STEINS;GATE 0"], [829110, "LEGO® DC Super-Villains"], [831560, "WARRIORS OROCHI 4 / 無雙OROCHI 蛇魔３"], [831660, "茂伸奇谈-Happy End-"], [837470, "Untitled Goose Game"], [844930, "Fox Hime Zero"], [845070, "The Awesome Adventures of Captain Spirit"], [850000, "被虐的诺艾尔 Complete Edition"], [851100, "Touhou Luna Nights"], [851850, "七龙珠Z 卡卡洛特"], [858820, "米德加尔的部落"], [860510, "小小梦魇2"], [860950, "Mark of the Ninja: Remastered"], [863550, "HITMAN™ 2"], [879850, "Box: The Game"], [880950, "爱上火车-Pure Station-"], [881020, "Granblue Fantasy: Relink"], [881100, "Noita"], [881320, "The LEGO® Movie 2 - Videogame"], [883710, "Resident Evil 2"], [895400, "Deadside"], [897220, "Summer Pockets"], [899440, "GOD EATER 3"], [903950, "Last Oasis"], [909080, "Cube Escape: Paradox"], [914710, "Cat Quest II"], [916440, "纪元1800"], [920210, "LEGO® Star Wars™: The Skywalker Saga"], [921570, "歧路旅人"], [930910, "STEINS;GATE: Linear Bounded Phenogram"], [934700, "Dead Island 2"], [935070, "Sakura MMO"], [939960, "Far Cry New Dawn"], [942970, "疑案追声"], [944020, "梦末"], [945360, "Among Us"], [952060, "Resident Evil 3"], [952070, "RESIDENT EVIL RESISTANCE"], [953490, "红怪"], [955050, "光明记忆"], [960910, "暴雨"], [968790, "真‧三國無雙６ with 猛將傳 DX"], [968950, "Sakura MMO 2"], [970560, "STEINS;GATE: My Darling's Embrace"], [970570, "CHAOS;CHILD"], [976310, "Mortal Kombat 11"], [976390, "9-nine-九次九日九重色"], [978520, "魔王大人，击退勇者吧"], [983150, "樱之杜†净梦者 2"], [990080, "霍格沃茨之遗"], [990630, "The Last Campfire"], [991270, "The Legend of Heroes: Trails of Cold Steel III"], [992300, "嗜血印 Bloody Spell"], [994280, "古剑奇谭三(Gujian3)"], [996770, "Moving Out"], [1002560, "茸雪"], [1004750, "WRC 8 FIA World Rally Championship"], [1016920, "Unrailed!"], [1024380, "二次灭绝 Second Extinction"], [1025440, "Fantasy General II"], [1030300, "Hollow Knight: Silksong"], [1030830, "四海兄弟II 最终版"], [1030840, "《四海兄弟: 最终版》"], [1033420, "9-nine-天色天歌天籁音"], [1034940, "Higurashi When They Cry Hou - Ch.7 Minagoroshi"], [1035110, "Moonrise Fall"], [1035510, "Ultimate Zombie Defense"], [1036890, "影子武士3：决定版"], [1038740, "Fluffy Store"], [1042800, "Warhammer 40,000: Inquisitor - Prophecy"], [1044620, "苍之彼方的四重奏"], [1047440, "DATE A LIVE: Rio Reincarnation"], [1053710, "The Red Lantern"], [1057090, "Ori and the Will of the Wisps"], [1059990, "Trombone Champ"], [1064130, "Sakura MMO 3"], [1066780, "Transport Fever 2"], [1069230, "月影魅像-解放之羽-"], [1084600, "沙石镇时光"], [1085660, "命运2"], [1088850, "Marvel's Guardians of the Galaxy"], [1091500, "赛博朋克 2077"], [1092790, "邪恶冥刻"], [1093910, "黑森町绮谭"], [1097840, "Gears 5"], [1099640, "Jack Move"], [1102130, "Florence"], [1105500, "人中之龙４　继承传说者"], [1105510, "人中之龙５　实现梦想者"], [1108590, "上古之魂"], [1111460, "小白兔电商"], [1116580, "我的阴暗面"], [1123050, "GRIME"], [1139900, "Ghostrunner - 幽灵行者"], [1142710, "全面战争：战锤3"], [1142830, "9-nine-春色春恋春熙风"], [1144400, "千恋＊万花"], [1145360, "Hades"], [1145960, "The White Door"], [1148590, "DOOM 64"], [1151340, "Fallout 76"], [1152300, "爱夏的炼金工房 ～黄昏大地之炼金术士～ DX"], [1152310, "爱丝卡＆罗吉的炼金工房 ～黄昏天空之炼金术士～ DX"], [1152320, "夏莉的炼金工房 ～黄昏海洋之炼金术士～ DX"], [1158310, "Crusader Kings III"], [1161190, "追忆夏色年华"], [1161870, "昙花"], [1169040, "奈斯启示录 Necesse"], [1171690, "Wayfinder"], [1172380, "《星球大战 绝地：陨落的武士团™》"], [1174180, "Red Dead Redemption 2"], [1178830, "光明记忆：无限"], [1180380, "Stay Out"], [1186640, "南瓜杰克"], [1189490, "觅长生"], [1196590, "Resident Evil Village"], [1198090, "英雄传说：闪之轨迹Ⅳ"], [1202310, "Sakura Succubus"], [1213300, "叛逆神魂 GODSOUL🔥"], [1217060, "枪火重生"], [1222140, "底特律：化身为人"], [1222680, "《Need for Speed™ Heat"], [1222690, "《龙腾世纪审判》"], [1222700, "A Way Out"], [1225780, "他人世界末"], [1227890, "夏日狂想曲：乡间的难忘回忆"], [1230140, "ATRI -My Dear Moments-"], [1235140, "人中之龙7　光与暗的去向　国际版"], [1237320, "索尼克 未知边境"], [1237950, "《STAR WARS™ 前线™ II"], [1237970, "Titanfall® 2"], [1238040, "《龙腾世纪II》终极版"], [1238810, "《战地风云 5》"], [1238820, "《Battlefield 3™》"], [1238840, "Battlefield™ 1"], [1243670, "Higurashi When They Cry Hou - Ch.8 Matsuribayashi"], [1244090, "Sea of Stars 星之海"], [1244460, "侏罗纪世界：进化 2"], [1245620, "艾尔登法环"], [1250760, "海沙风云 Far Away"], [1259420, "Days Gone"], [1262240, "植物大战僵尸™: 和睦小镇保卫战"], [1262540, "Need for Speed™"], [1262560, "Need for Speed™ Most Wanted"], [1262580, "Need for Speed™ Payback"], [1262600, "Need for Speed™ Rivals"], [1267540, "WRC 9 FIA World Rally Championship"], [1271190, "女王的荣耀  / Queen's Glory"], [1272160, "The Life and Suffering of Sir Brante"], [1276760, "七龙珠 破界斗士"], [1277400, "Monster Hunter Stories 2: Wings of Ruin"], [1277930, "Riddle Joker"], [1277940, "金辉恋曲四重奏"], [1281630, "Anno 1404 - History Edition"], [1281800, "Samsara Room"], [1281930, "tModLoader"], [1283700, "头号追击"], [1285190, "无主之地®4"], [1286280, "弃海"], [1286680, "小缇娜的奇幻之地"], [1288310, "烟火"], [1292940, "Cube Escape Collection"], [1293830, "极限竞速：地平线 4"], [1295730, "Leveling up girls in another world"], [1296260, "Sakura Knight 2"], [1296830, "暖雪 Warm Snow"], [1304930, "The Outlast Trials"], [1306630, "Lost Ruins"], [1325200, "仁王２ Complete Edition"], [1326000, "Sakura Succubus 2"], [1326470, "Sons Of The Forest"], [1328660, "《极品飞车：热力追踪》重制版"], [1328670, "《质量效应》传奇版"], [1330470, "暗影火炬城"], [1333910, "Sizeable"], [1338580, "像素哥3"], [1338770, "狙击手：幽灵战士契约 2"], [1340130, "苍之彼方的四重奏 EXTRA1"], [1340990, "浪人崛起"], [1345740, "恋爱绮谭 不存在的夏天"], [1346770, "醋意乱流"], [1351370, "Sakura Knight 3"], [1351630, "Ys IX: Monstrum Nox"], [1352930, "勇敢的哈克"], [1356040, "Ampersat"], [1361320, "The Room 4: Old Sins"], [1366540, "戴森球计划"], [1368870, "Field of Glory II: Medieval"], [1369630, "ENDER LILIES: Quietus of the Knights"], [1371980, "《恶意不息》"], [1377360, "Vampires' Melody"], [1382330, "Persona 5 Strikers"], [1388590, "人中之龙６　生命诗篇。"], [1406020, "Sakura Succubus 3"], [1406990, "NEKOPARA Vol. 4"], [1424660, "9-nine-雪色雪花雪之痕"], [1426210, "双人成行"], [1429500, "边境猎人: 艾尔莎的命运之轮"], [1432100, "书行者"], [1434480, "爱上火车-Last Run!!-"], [1444350, "House"], [1446780, "MONSTER HUNTER RISE"], [1448440, "Wo Long: Fallen Dynasty （卧龙：苍天陨落）"], [1449560, "Metro Exodus Enhanced Edition"], [1451940, "主播女孩重度依赖"], [1457520, "英雄传说 零之轨迹：改"], [1461920, "英雄传说 碧之轨迹：改"], [1462810, "WRC 10 FIA World Rally Championship"], [1466680, "Sakura MMO Extra"], [1466690, "Sakura Succubus 4"], [1468810, "鬼谷八荒"], [1498570, "THE KING OF FIGHTERS XV"], [1502970, "苏菲的炼金工房 ～不可思议书的炼金术士～ DX"], [1502980, "菲利丝的炼金工房 ～不可思议旅的炼金术士～ DX"], [1502990, "莉迪＆苏瑞的炼金工房 ～不可思议绘画的炼金术士～ DX"], [1506980, "葬花·暗黑桃花源"], [1507720, "童话森林"], [1515210, "The Past Within"], [1517290, "《战地风云™ 2042》"], [1518770, "Re:LieF ～献给亲爱的你～"], [1522820, "Orcs Must Die! 3"], [1524650, "Sakura Forest Girls"], [1533420, "Neon White"], [1555110, "Chasing Tails 〜雪中誓约〜"], [1562700, "闪避刺客"], [1567800, "星空列车与白的旅行"], [1578650, "深空梦里人"], [1579380, "Shadow Tactics: 爱子的选择 Aiko's Choice"], [1580240, "Rune Factory 4 Special"], [1584090, "东方夜雀食堂 - Touhou Mystia's Izakaya"], [1588550, "孤山独影"], [1590910, "Forgive Me Father"], [1592640, "Sakura Alien"], [1599330, "荒原疗者 (Wildmender)"], [1601580, "冰汽时代2"], [1602010, "女神异闻录4 无敌究极后桥背摔"], [1604380, "常轨脱离Creative"], [1608450, "地狱仆从"], [1621310, "苏菲的炼金工房２ ～不可思议梦的炼金术士～"], [1623730, "Palworld / 幻兽帕鲁"], [1627720, "Lies of P"], [1630490, "Sakura Forest Girls 2"], [1633660, "Girl Jigsaw 2"], [1634080, "离火长明"], [1645820, "SurrounDead"], [1659040, "HITMAN World of Assassination"], [1659420, "UNCHARTED™: 盗贼传奇合辑"], [1661630, "因果动物园"], [1665210, "Sakura Forest Girls 3"], [1669980, "火山的女儿"], [1672810, "MIO: Memories in Orbit"], [1672970, "Minecraft Dungeons"], [1681430, "机械战警：暴戾都市"], [1687950, "女神异闻录5皇家版"], [1701520, "心渊梦境"], [1712840, "商店页面"], [1716310, "觉醒异刃"], [1718570, "神之天平（ASTLIBRA Revision）"], [1727650, "死寂（DeathlyStillness）"], [1740100, "独自在家"], [1746030, "山河旅探 - Murders on the Yangtze River"], [1747760, "莫莫多拉: 月下告别"], [1751630, "淑女同萌！-Superior Entelecheia-"], [1765350, "候鸟"], [1772910, "Dead District"], [1773180, "The Matriarch"], [1774580, "星球大战 绝地：幸存者™"], [1776970, "近月少女的礼仪"], [1777430, "恋爱绮谭 不存在的真相"], [1782460, "地狱丧钟 Hell Clock"], [1795430, "Sakura Succubus 5"], [1805480, "人中之龙 维新！极"], [1809540, "九日"], [1817070, "Marvel’s Spider-Man Remastered"], [1817230, "Hi-Fi RUSH"], [1817290, "暗夜长梦"], [1818450, "STALZONE"], [1829980, "星光咖啡馆与死神之蝶"], [1842690, "箱庭铁道物语 (Station Manager)"], [1846380, "《极品飞车™：不羁》"], [1847240, "游戏开发物语 (Game Dev Story)"], [1859360, "冒险村物语 (Dungeon Village)"], [1859370, "幸福公寓物语DX (Dream House Days DX)"], [1868140, "潜水员戴夫 DAVE THE DIVER"], [1874000, "Life is Strange: Double Exposure"], [1875830, "真·女神转生Ⅴ Vengeance"], [1876890, "逸剑风云决"], [1879330, "无双大蛇２ 终极版"], [1887840, "蟹蟹寻宝奇遇"], [1888160, "机战佣兵™VI 境界天火™"], [1888930, "The Last of Us™ Part I"], [1890120, "9-nine-:NewEpisode"], [1902690, "Fate/Samurai Remnant"], [1902710, "奇怪的RPG"], [1918520, "合战忍者村物语 (Ninja Village)"], [1918530, "赛马牧场物语 (Pocket Stables)"], [1918540, "开罗拉面店 (The Ramen Sensei)"], [1920960, "虚拟桌宠模拟器"], [1921770, "漫画道场物语 (The Manga Works)"], [1921780, "海鲜寿司物语 (The Sushi Spinnery)"], [1922560, "Plants vs. Zombies™ Garden Warfare 2:豪华版"], [1923670, "都市大亨物语 (Venture Towns)"], [1933970, "动画制作物语 (Anime Studio Story)"], [1933980, "夏日水上乐园物语 (Pool Slide Story)"], [1933990, "创意汉堡物语 (Burger Bistro Story)"], [1938090, "使命召唤®"], [1941110, "Higurashi When They Cry Hou - Rei"], [1942280, "土豆兄弟(Brotato)"], [1943950, "Escape the Backrooms"], [1947950, "风云拳击物语 (Boxing Gym Story)"], [1952170, "美食梦物语 (Cafeteria Nipponica)"], [1955830, "东方冰之勇者记"], [1960830, "玉响未来"], [1961390, "Sakura Succubus 6"], [1961760, "她的圣域"], [1966720, "Lethal Company"], [1969870, "生死狙击2"], [1971650, "歧路旅人 II"], [1977170, "退潮"], [1978100, "冲刺！赛车物语 (Grand Prix Story)"], [1983690, "森丘露营地物语 (Forest Camp Story)"], [1983700, "百货商场物语2 (Mega Mall Story 2)"], [1983710, "冒险村物语2 (Dungeon Village 2)"], [1985260, "金辉恋曲四重奏 -Golden Time-"], [1991040, "学生时代"], [2001120, "双影奇境"], [2005090, "演灭 EVOTINCTION"], [2017640, "Sakura Gym Girls"], [2019360, "豪华大游轮物语 (World Cruise Story)"], [2019370, "大江户物语 (Oh! Edo Towns)"], [2021690, "Sakura Alien 2"], [2021710, "Sakura Succubus 7"], [2050650, "Resident Evil 4"], [2054810, "网球俱乐部物语 (Tennis Club Story)"], [2072150, "星之开罗君 (Kairobotica)"], [2072170, "闪耀滑雪场物语 (Shiny Ski Resort)"], [2072420, "开拓神秘岛DX (Beastie Bay DX)"], [2072450, "人中之龙８"], [2073250, "节奏裂隙"], [2074920, "The First Descendant"], [2075730, "《使命召唤®：现代战争®II 2022》公开试玩"], [2084720, "棒球学院物语 (Home Run High)"], [2085540, "打工火柴人"], [2087030, "Shatterline"], [2089450, "温泉物语2 (Hot Springs Story 2)"], [2101290, "电影工坊物语 (Silver Screen Story)"], [2102480, "梦想商店街物语 (Biz Builder Delux)"], [2114740, "神之亵渎2"], [2119650, "便利店开业日记 (Convenience Stories)"], [2119660, "游乐园梦物语 (Dream Park Story)"], [2119670, "打造吧！高尔夫之森 (Forest Golf Planner)"], [2119680, "南国度假岛物语 (Tropical Resort Story)"], [2149010, "小小梦魇 强化版"], [2175540, "勇者斗恶龙 怪物仙境3 魔族王子与精灵的旅程"], [2183900, "Warhammer 40,000: 星际战士2"], [2191480, "珍宝机场物语 (Jumbo Airport Story)"], [2191490, "口袋学院物语3 (Pocket Academy 3)"], [2194530, "犹格索托斯的庭院"], [2206270, "吸血鬼猎人"], [2206340, "苍之彼方的四重奏 EXTRA2"], [2208920, "刺客信条：英灵殿"], [2243710, "符文工厂3豪华版"], [2272400, "站点连连 Station to Station"], [2273430, "苍翼：混沌效应"], [2290180, "极限国度"], [2291850, "Underground Blossom"], [2315040, "火炬之光：无限"], [2321470, "深岩银河：幸存者"], [2337860, "呆呆大乱斗"], [2342950, "God Of Weapons"], [2346410, "边境开拓者"], [2356560, "Monster Hunter Stories"], [2358720, "黑神话：悟空"], [2375080, "Sakura Bunny Girls"], [2375550, "人中之龙7外传 无名之龙"], [2378900, "The Coffin of Andy and Leyley"], [2379780, "Balatro"], [2384580, "真・三国无双 起源"], [2396980, "Fate/stay night REMASTERED"], [2399220, "NUKITASHI"], [2407270, "AI LIMIT 无限机兵"], [2412050, "No Ghost in Sky Elevator"], [2427100, "创意咖啡店物语 (Cafe Master Story)"], [2430690, "幸运草的约定"], [2431880, "大海贼探险物语DX (High Sea Saga DX)"], [2432110, "WHITE ALBUM"], [2437690, "探险顽皮动物园 (Zoo Park Story)"], [2457890, "DRACOMATON"], [2458530, "魔女的夜宴"], [2478970, "Tomb Raider I-III Remastered Starring Lara Croft"], [2479810, "灰区战争"], [2487490, "Sakura Succubus 8"], [2488340, "创造都市岛物语 (Dream Town Island)"], [2491040, "Higurashi When They Cry Hou+"], [2510770, "星之终途"], [2510810, "突然＊恋人"], [2525380, "Tomb Raider IV-VI Remastered"], [2527500, "米塔 MiSide"], [2538910, "夏末白夜"], [2543510, "枪途末路"], [2567190, "少女理论以及周边 -École de Paris-"], [2593370, "饿殍：明末千里行"], [2608040, "Travellin Cats in China"], [2614070, "NUKITASHI 2"], [2622380, "艾尔登法环 黑夜君临"], [2627780, "DATE A LIVE: Ren Dystopia"], [2646050, "Sakura Isekai Adventure"], [2678640, "朝露：境界旅程"], [2680010, "The First Berserker: Khazan"], [2699690, "Harmonia Full HD Edition"], [2704110, "彼方的她-Aliya"], [2725260, "ENDER MAGNOLIA: Bloom in the Mist"], [2732020, "开拍！电视制作物语 (TV Studio Story)"], [2752710, "WHAT THE PAK?!"], [2767030, "漫威争锋"], [2788150, "Sakura Succubus 9"], [2788160, "Sakura Bunny Girls 2"], [2798600, "贝果爱情故事"], [2828500, "The Jackbox Megapicker"], [2832790, "Sakura Isekai Adventure 2"], [2835570, "恶魔轮盘"], [2848360, "洞窟冒险团物语 (Cavern Adventurers)"], [2860410, "NineHells"], [2873080, "不/存在的你，和我"], [2921380, "Caribbean Crashers"], [2950340, "LEGO® Harry Potter™ Collection"], [2955840, "厨房战争"], [2983260, "LUNARiA -Virtualized Moonchild-"], [2983350, "planetarian～雪圏球～"], [3017860, "DOOM: The Dark Ages"], [3027600, "恋爱与选举与巧克力"], [3035500, "架空地图模拟器"], [3042830, "前进！！英雄战队物语 DX (Legends of Heropolis DX)"], [3059010, "二战前线合集"], [3061810, "人中之龙８外传 Pirates in Hawaii"], [3104270, "KANADE"], [3132250, "平安古都物语 (Heian City Story)"], [3155290, "哥哥，早起前要一直抱紧我哦！"], [3171460, "初雪樱"], [3178350, "无双深渊"], [3240220, "Grand Theft Auto V 增强版"], [3240500, "Sakura Isekai Adventure 3"], [3334710, "摔跤擂台物语 (Pro Wrestler Story)"], [3350200, "情感反诈模拟器"], [3353830, "生存战场"], [3389860, "泡芙爱情故事"], [3418570, "Summer Pockets REFLECTION BLUE"], [3444020, "我在地府打麻将"], [3472040, "NBA 2K26"], [3527290, "PEAK"], [3595230, "《使命召唤®：现代战争® II 2022》"], [3601190, "银盘滑冰场物语 (Skating Rink Story)"], [3639650, "少女与学院城"], [3755860, "BLACK SOULS"], [3784030, "浣熊推币机"], [3837340, "FINAL FANTASY VII"], [3838280, "极乐妹土！3"], [3856040, "形单影只：坠落地牢无尽深渊"], [3862670, "龟龟潜海记 Shelldiver"], [3932890, "Escape from Tarkov"], [3934270, "多少兄弟？"], [3936590, "探险异星飞行队 (Final Frontier Story)"], [4177730, "几度相逢若初见"], [4212210, "魔王城物语 (Demon Castle Story)"], [4424950, "飞空艇探险物语 (Skyship Quest Story)"]];
 
-  // 限流:Steam API 约 200 请求/5分钟/IP → 每请求间隔 1.6s 保守(含缓冲)
-  var DELAY_MS = 1600;
-  // 抓取模式:auto = 按 name 语言智能降载(只抓缺失语言,约一半请求量);full = 双语言全抓
-  var MODE = 'auto';
-  // 增量模式:填要抓的 appid 数组(如 [2206270, 2342950]),只抓这几款;留空(null) = 全量抓 821 款
-  var ONLY_APPIDS = null;
+  var DELAY_MS = 1600; // 限流间隔(Steam API 约 200 请求/5分钟/IP)
+  var BATCH = 20;      // 每批 AppID 数(批量请求加速:821 款双语言约 5 分钟内)
+  var STORE = 'i18n_appids'; // GM_setValue 存储键,脚本自动记住 AppID
 
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
 
-  function hasCJK(s) { return /[一-鿿㐀-䶿]/.test(s || ''); }
-
-  function pickLang(name, mode) {
-    // 返回需要抓取的语言数组
-    if (mode === 'full') return ['cn', 'en'];
-    return hasCJK(name) ? ['en'] : ['cn'];
+  // 解析用户粘贴的 id:支持空格/逗号/换行/制表符分隔,自动去重
+  function parseIds(s) {
+    var seen = {}, out = [];
+    String(s || '').split(/[\s,，;；\n\t]+/).forEach(function (x) {
+      var n = parseInt(x, 10);
+      if (!isNaN(n) && !seen[n]) { seen[n] = 1; out.push(n); }
+    });
+    return out;
   }
 
-  function fetchJson(id, lang) {
-    var url = 'https://store.steampowered.com/api/appdetails?appids=' + id + (lang === 'cn' ? '&l=schinese' : '');
+  // GM_xmlhttpRequest 封装成 Promise:跨域请求不受 CORS 限制,通用任意页面
+  function xhr(url) {
     return new Promise(function (resolve, reject) {
-      var ctrl = new AbortController();
-      var timer = setTimeout(function () { ctrl.abort(); }, 12000);
-      fetch(url, { signal: ctrl.signal })
-        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-        .then(function (j) {
-          clearTimeout(timer);
-          try {
-            var item = j[String(id)];
-            if (!item || !item.success) { resolve(null); return; }
-            resolve(item.data.name || null);
-          } catch (e) { resolve(null); }
-        })
-        .catch(function (e) { clearTimeout(timer); reject(e); });
+      GM_xmlhttpRequest({
+        method: 'GET', url: url, timeout: 15000,
+        onload: function (r) { resolve(r.responseText); },
+        onerror: reject, ontimeout: reject
+      });
     });
   }
 
-  async function fetchWithRetry(id, lang) {
+  // 抓一批 AppID 的中文(cn)或英文(en)名,失败自动重试 3 次
+  async function fetchBatch(ids, lang) {
+    var url = 'https://store.steampowered.com/api/appdetails?appids=' + ids.join(',') +
+              '&filters=basic' + (lang === 'cn' ? '&l=schinese' : '&l=english');
     for (var attempt = 1; attempt <= 3; attempt++) {
       try {
-        var name = await fetchJson(id, lang);
-        if (name) return name;
-      } catch (e) { /* 超时/失败,重试 */ }
-      if (attempt < 3) await sleep(DELAY_MS * 2);
+        var j = JSON.parse(await xhr(url));
+        var out = {};
+        ids.forEach(function (id) {
+          var item = j[String(id)];
+          out[id] = (item && item.success && item.data) ? item.data.name : null;
+        });
+        return out;
+      } catch (e) {
+        if (attempt < 3) await sleep(DELAY_MS * 2);
+      }
     }
-    return null; // 3 次仍失败
+    return null; // 3 次仍失败,交给调用方记录
+  }
+
+  // 交互:读取已保存的 AppID,弹窗让用户选择沿用/覆盖/清空
+  function getIds() {
+    var saved = GM_getValue(STORE, null);
+    if (Array.isArray(saved) && saved.length) {
+      var choice = prompt(
+        '上次已保存 ' + saved.length + ' 个 AppID。\n\n' +
+        '[回车] 沿用这 ' + saved.length + ' 个\n' +
+        '[new] 粘贴新列表覆盖\n' +
+        '[clear] 清空后重新输入'
+      );
+      if (choice === null) return null;
+      var c = String(choice).trim().toLowerCase();
+      if (c === 'new') return promptNew();
+      if (c === 'clear') { GM_setValue(STORE, null); return promptNew(); }
+      return saved; // 回车或其他 → 沿用
+    }
+    return promptNew();
+
+    // 弹窗粘贴新 AppID 列表,识别有效数字后持久化
+    function promptNew() {
+      var input = prompt('粘贴 AppID 列表\n(空格/逗号/换行分隔,如: 2206270 2342950 1030300)');
+      if (input === null) return null;
+      var ids = parseIds(input);
+      if (!ids.length) { alert('没有识别到有效 AppID'); return null; }
+      GM_setValue(STORE, ids);
+      return ids;
+    }
   }
 
   async function run() {
-    // 增量模式:只保留 ONLY_APPIDS 里的目标
-    var targets = ONLY_APPIDS && ONLY_APPIDS.length
-      ? GAMES.filter(function (x) { return ONLY_APPIDS.indexOf(x[0]) >= 0; })
-      : GAMES;
-    var out = [];
-    var failed = [];
-    var total = targets.length;
-    console.log('开始抓取,共 ' + total + ' 款,模式=' + MODE + (ONLY_APPIDS ? ' (增量)' : ' (全量)') + ',预计约 ' + Math.ceil(total * DELAY_MS / 1000 / 60) + ' 分钟(请保持页面打开)');
-    for (var i = 0; i < total; i++) {
-      var appid = targets[i][0];
-      var name = targets[i][1];
-      var langs = pickLang(name, MODE);
-      var cn = null, en = null;
+    var ids = getIds();
+    if (!ids || !ids.length) { console.log('已取消或无可抓取 AppID'); return; }
 
-      // name 本身的语言作为基线
-      if (hasCJK(name)) { cn = name; } else { en = name; }
+    console.log('开始抓取 ' + ids.length + ' 款,每批 ' + BATCH + ' 个,保持页面打开…');
+    var batches = [];
+    for (var i = 0; i < ids.length; i += BATCH) batches.push(ids.slice(i, i + BATCH));
 
-      for (var k = 0; k < langs.length; k++) {
-        var lang = langs[k];
-        var got = await fetchWithRetry(appid, lang);
-        if (got) {
-          if (lang === 'cn') cn = got; else en = got;
-        } else {
-          failed.push(appid + '\t' + name + '\t[缺' + (lang === 'cn' ? '中' : '英') + '文名]');
-        }
-        // 抓两次(双语言)时两次之间也间隔
-        if (k < langs.length - 1) await sleep(DELAY_MS);
-      }
-
-      out.push([appid, cn || name, en || name].join('\t'));
-
-      if ((i + 1) % 50 === 0 || i + 1 === total) {
-        var done = i + 1;
-        console.log('进度 ' + done + '/' + total + ' (' + Math.round(done / total * 100) + '%),当前: ' + name);
-      }
+    var cnAll = {}, enAll = {}, failed = [], done = 0;
+    for (var b = 0; b < batches.length; b++) {
+      var batch = batches[b];
+      var cn = await fetchBatch(batch, 'cn');
+      if (cn) { for (var k in cn) cnAll[k] = cn[k]; } else { failed.push(batch); }
       await sleep(DELAY_MS);
+
+      var en = await fetchBatch(batch, 'en');
+      if (en) { for (var k in en) enAll[k] = en[k]; } else { failed.push(batch); }
+      await sleep(DELAY_MS);
+
+      done += batch.length;
+      console.log('进度 ' + done + '/' + ids.length + ' 款');
     }
 
-    var content = out.join('\n');
-    var blob = new Blob(['﻿' + content], { type: 'text/tab-separated-values;charset=utf-8' });
+    // 产出 TSV:appid \t 中文名 \t 英文名(缺的留空)
+    var lines = ids.map(function (id) {
+      return id + '\t' + (cnAll[id] || '') + '\t' + (enAll[id] || '');
+    });
+    var blob = new Blob(['﻿' + lines.join('\n')], { type: 'text/tab-separated-values;charset=utf-8' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
-    a.href = url;
-    a.download = 'games_i18n.tsv';
-    document.body.appendChild(a);
-    a.click();
+    a.href = url; a.download = 'games_i18n.tsv';
+    document.body.appendChild(a); a.click();
     setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1000);
 
-    console.log('完成!已下载 games_i18n.tsv,共 ' + out.length + ' 行。');
+    console.log('完成!已下载 games_i18n.tsv,共 ' + lines.length + ' 行。');
     if (failed.length) {
-      console.log('以下 ' + failed.length + ' 项抓取失败(3 次重试后):');
-      console.log(failed.join('\n'));
+      console.log('以下批次抓取失败(3 次重试后),可把这些 AppID 重新喂给脚本再跑一次:');
+      failed.forEach(function (f) { console.log('  ' + f.join(',')); });
     } else {
       console.log('全部成功,无缺失。');
     }
