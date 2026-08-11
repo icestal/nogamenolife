@@ -6,13 +6,15 @@
 #   games_i18n.tsv          appid\t中文名\t英文名(补 family 未覆盖的中英文)
 #   games_raw_*.tsv         各成员个人库(appid\t游戏名)→ name/owners
 #   games_tags.tsv          appid\t系列\t别名...(手工维护)
-import json, os, datetime
+import json, os, datetime, re
 
-MEMBERS = ["老胡", "小寒", "ZZZ"]
+MEMBERS = ["老胡", "小寒", "ZZZ", "木贰", "老梁"]
 files = {
     "老胡": "games_raw_laohu.tsv",
     "小寒": "games_raw_xiaohan.tsv",
     "ZZZ": "games_raw_zzz.tsv",
+    "木贰": "tsv_76561199390122848.tsv",
+    "老梁": "tsv_76561199480507822.tsv",
 }
 
 # family_library_full 的 owner 是 steamid,映射回成员名;临时成员不入库
@@ -20,6 +22,8 @@ OWNER_MAP = {
     "76561198354643514": "老胡",
     "76561199637975845": "小寒",
     "76561198346840276": "ZZZ",
+    "76561199390122848": "木贰",
+    "76561199480507822": "老梁",
     # 76561199841374927 = 临时成员 → 不在映射里,自动排除
 }
 
@@ -44,6 +48,29 @@ def load_tsv(fp, columns=0):
                     row = parts[1:]
                 out[appid] = row
     return out
+
+def load_rules(fp='tags_rules.tsv'):
+    """读标签规则: 每行 标签名\t关键词1\t关键词2... → [(tag, [kws])]"""
+    rules = []
+    if not os.path.exists(fp):
+        return rules
+    with open(fp, encoding='utf-8-sig') as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            p = line.split('\t')
+            if len(p) >= 2 and p[0].strip():
+                rules.append((p[0].strip(), [k.strip() for k in p[1:] if k.strip()]))
+    return rules
+
+
+def kw_in(text, kw):
+    """中文关键词=子串匹配; 英文关键词=词边界匹配(避免 'Ys' 误伤 'eyes')"""
+    if any('一' <= c <= '鿿' for c in kw):
+        return kw in (text or '')
+    return re.search(r'(?<![A-Za-z0-9])' + re.escape(kw) + r'(?![A-Za-z0-9])', text or '', re.I) is not None
+
 
 def load_family(fp, require_owner):
     """读一个家庭组库文件 → {appid: [cn,en,owners,exclude]}。
@@ -94,6 +121,7 @@ for _fp, _ro in FAMILY_FILES:
 
 i18n = load_tsv('games_i18n.tsv', 2)              # [cn, en]
 tags = load_tsv('games_tags.tsv')                 # [series, alias...]
+rules = load_rules('tags_rules.tsv')              # [(tag, [kws])],遍历全量打标
 
 # 成员个人库:name + owners
 members_games = {}
@@ -141,6 +169,14 @@ for appid in all_ids:
     aliases = trow[1:] if len(trow) > 1 else []
 
     excl = frow[3] if len(frow) > 3 else ''  # 共享排除原因(3=Steam 排除:免费工具/免费游戏不可共享)
+    # 标签:遍历规则,cn/en/name 任一命中关键词即打该标签(一个游戏可多个标签)
+    tags_list = []
+    for tag, kws in rules:
+        for kw in kws:
+            if kw_in(cn, kw) or kw_in(en, kw) or kw_in(name, kw):
+                tags_list.append(tag)
+                break
+
     result.append({
         "id": appid,
         "name": name,
@@ -148,6 +184,7 @@ for appid in all_ids:
         "en": en,
         "aliases": aliases,
         "series": series,
+        "tags": tags_list,
         "owners": owners,
         "share": appid in family and excl != '3',  # 在家庭组且未被 Steam 排除 = 可共享
         "exclude": excl,
@@ -159,8 +196,10 @@ data = {
     "updated": datetime.date.today().isoformat(),
     "games": result,
 }
-with open('games.json', 'w', encoding='utf-8') as f:
+# DRY_RUN=1 时输出到 games_dry.json,不碰 games.json(验证打标/预览用)
+out = os.environ.get('DRY_RUN') and 'games_dry.json' or 'games.json'
+with open(out, 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-print("合并完成：共 %d 款（family %d 条可共享，i18n %d 条，tags %d 条）"
-      % (len(result), len(family), len(i18n), len(tags)))
+print("合并完成：共 %d 款（family %d 条可共享，i18n %d 条，手工tags %d 条，规则标签命中 %d 款）→ %s"
+      % (len(result), len(family), len(i18n), len(tags), sum(1 for g in result if g["tags"]), out))

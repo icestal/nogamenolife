@@ -130,6 +130,19 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .card .tags {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    padding: 0 10px 6px;
+  }
+  .card .tag {
+    font-size: 10px; line-height: 1;
+    color: var(--accent);
+    background: rgba(102,192,244,0.12);
+    border: 1px solid rgba(102,192,244,0.3);
+    border-radius: 3px;
+    padding: 2px 5px;
+    white-space: nowrap;
+  }
 
   /* 空状态 */
   .empty {
@@ -198,7 +211,7 @@
     return /[一-鿿㐀-䶿]/.test(s || '');
   }
 
-  // 判断游戏是否匹配关键词:name / cn / en / aliases / series 任一命中即可
+  // 判断游戏是否匹配关键词:name / cn / en / aliases / series / tags 任一命中即可
   function matchGame(g, kw) {
     if (g.name && g.name.toLowerCase().indexOf(kw) >= 0) return true;
     if (g.cn && g.cn.toLowerCase().indexOf(kw) >= 0) return true;
@@ -207,6 +220,11 @@
     if (Array.isArray(g.aliases)) {
       for (var i = 0; i < g.aliases.length; i++) {
         if (g.aliases[i] && g.aliases[i].toLowerCase().indexOf(kw) >= 0) return true;
+      }
+    }
+    if (Array.isArray(g.tags)) {
+      for (var j = 0; j < g.tags.length; j++) {
+        if (g.tags[j] && g.tags[j].toLowerCase().indexOf(kw) >= 0) return true;
       }
     }
     if (g.pinyin && g.pinyin.toLowerCase().indexOf(kw) >= 0) return true;
@@ -292,6 +310,19 @@
         en.className = 'en';
         en.textContent = enSub;
         card.appendChild(en);
+      }
+
+      // 标签行(来自 tags_rules.tsv 遍历打标,可多个)
+      if (Array.isArray(g.tags) && g.tags.length) {
+        var tags = document.createElement('div');
+        tags.className = 'tags';
+        g.tags.forEach(function (t) {
+          var span = document.createElement('span');
+          span.className = 'tag';
+          span.textContent = t;
+          tags.appendChild(span);
+        });
+        card.appendChild(tags);
       }
 
       var owners = Array.isArray(g.owners) ? g.owners : (g.owner ? [g.owner] : []);

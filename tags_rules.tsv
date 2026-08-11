@@ -1,0 +1,36 @@
+# 标签规则库(遍历打标用)
+# 格式: 标签名 \t 匹配关键词1 \t 匹配关键词2 ...
+# 匹配规则: 游戏的 cn / en / name 任一命中关键词即打该标签(一个游戏可多个标签)
+# 中文关键词=子串匹配; 英文关键词=词边界匹配(避免 Ys 误伤 eyes)
+# 觉得某标签典型 → 加一行; 新游戏自动进标签, 不用逐款手打
+KEY社	CLANNAD	Rewrite	Summer Pockets	星之梦	planetarian	Little Busters	Kanon	AIR	Angel Beats	智代After	Kud Wafter
+柚子社	千恋万花	魔女的夜宴	DRACU-RIOT	riddle joker	星光咖啡馆	Cafe Stella	Sabbat of the Witch	柚子
+轨迹	Trails	轨迹
+伊苏	Ys	伊苏
+空洞骑士	Hollow Knight	空洞骑士	Silksong	丝之歌
+刺客信条	Assassin's Creed	刺客信条
+无主之地	Borderlands	无主之地
+地铁	Metro	地铁
+DOOM	DOOM	毁灭战士
+巫师	Witcher	巫师
+战地	Battlefield	战地
+使命召唤	Call of Duty	使命召唤	COD
+古墓丽影	Tomb Raider	古墓丽影
+极品飞车	Need for Speed	极品飞车	NFS
+荒野大镖客	Red Dead	荒野大镖客
+星球大战	Star Wars	星球大战
+命运石之门	Steins;Gate	命运石之门
+寒蝉	Higurashi	寒蝉
+炼金工房	Atelier	炼金工房
+魂系FromSoftware	Dark Souls	黑暗之魂	Elden Ring	艾尔登法环	Sekiro	只狼	Bloodborne	血源	FromSoftware	恶魔之魂
+人中之龙	Yakuza	人中之龙	如龙
+辐射	Fallout	辐射
+生化危机	Resident Evil	生化危机	Biohazard
+怪物猎人	Monster Hunter	怪物猎人
+泰拉瑞亚	Terraria	泰拉瑞亚
+全面战争	Total War	全面战争
+三国	三国志	三国群英传	三国杀	三國志	Romance of the Three Kingdoms	真・三国无双	真·三国无双
+拳皇	THE KING OF FIGHTERS	拳皇	KOF
+死亡空间	Dead Space	死亡空间
+死亡搁浅	DEATH STRANDING	死亡搁浅
+战锤	Warhammer	战锤
