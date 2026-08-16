@@ -4,7 +4,7 @@ title 只买不玩康复中心 - 一键更新
 cd /d "d:\software\claude code\steamfamily"
 
 echo [1/4] 合并游戏清单...
-python merge.py
+python "最新代码\merge.py"
 if errorlevel 1 goto :err
 
 echo [2/4] 提交变更...

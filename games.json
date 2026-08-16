@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-08-11",
+  "updated": "2026-08-16",
   "games": [
     {
       "id": 70,
@@ -32,8 +32,7 @@
       "series": "半条命系列",
       "tags": [],
       "owners": [
-        "小寒",
-        "老梁"
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -20008,6 +20007,20 @@
       "exclude": ""
     },
     {
+      "id": 1903340,
+      "name": "光与影：33号远征队",
+      "cn": "光与影：33号远征队",
+      "en": "Clair Obscur: Expedition 33",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1907720,
       "name": "奥拓星球：强敌 / Autonauts VS. Piratebots",
       "cn": "奥拓星球：强敌 / Autonauts VS. Piratebots",
@@ -20947,26 +20960,6 @@
       "exclude": ""
     },
     {
-      "id": 2075730,
-      "name": "《使命召唤®：现代战争®II 2022》公开试玩",
-      "cn": "《使命召唤：现代战争II 2022》公开试玩",
-      "en": "《使命召唤®：现代战争®II 2022》公开试玩",
-      "aliases": [
-        "call-of-duty",
-        "cod",
-        "使命召唤"
-      ],
-      "series": "使命召唤系列",
-      "tags": [
-        "使命召唤"
-      ],
-      "owners": [
-        "ZZZ"
-      ],
-      "share": false,
-      "exclude": ""
-    },
-    {
       "id": 2078450,
       "name": "战锤40K：极速狂飙",
       "cn": "战锤40K：极速狂飙",
@@ -21880,7 +21873,7 @@
       "owners": [
         "ZZZ"
       ],
-      "share": true,
+      "share": false,
       "exclude": ""
     },
     {
@@ -22560,6 +22553,20 @@
       "exclude": ""
     },
     {
+      "id": 2530980,
+      "name": "美德传奇fRemastered",
+      "cn": "美德传奇fRemastered",
+      "en": "Tales of Graces f Remastered",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2538910,
       "name": "夏末白夜",
       "cn": "夏末白夜",
@@ -23037,6 +23044,20 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2865580,
+      "name": "一起来扫雷",
+      "cn": "一起来扫雷",
+      "en": "Let's Minesweeper",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -24105,34 +24126,6 @@
       "exclude": ""
     },
     {
-      "id": 4256290,
-      "name": "放置之路：古神复苏 试玩版",
-      "cn": "放置之路：古神复苏 试玩版",
-      "en": "放置之路：古神复苏 试玩版",
-      "aliases": [],
-      "series": "",
-      "tags": [],
-      "owners": [
-        "老梁"
-      ],
-      "share": false,
-      "exclude": ""
-    },
-    {
-      "id": 4310820,
-      "name": "我家有矿 试玩版",
-      "cn": "我家有矿 试玩版",
-      "en": "我家有矿 试玩版",
-      "aliases": [],
-      "series": "",
-      "tags": [],
-      "owners": [
-        "老梁"
-      ],
-      "share": false,
-      "exclude": ""
-    },
-    {
       "id": 4424950,
       "name": "飞空艇探险物语 (Skyship Quest Story)",
       "cn": "飞空艇探险物语 (Skyship Quest Story)",
@@ -24144,20 +24137,6 @@
         "ZZZ"
       ],
       "share": true,
-      "exclude": ""
-    },
-    {
-      "id": 4684420,
-      "name": "我的傲娇妹妹 MY TSUNDERE SISTER Demo",
-      "cn": "我的傲娇妹妹 MY TSUNDERE SISTER Demo",
-      "en": "我的傲娇妹妹 MY TSUNDERE SISTER Demo",
-      "aliases": [],
-      "series": "",
-      "tags": [],
-      "owners": [
-        "老梁"
-      ],
-      "share": false,
       "exclude": ""
     }
   ]
