@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-08-16",
+  "updated": "2026-08-23",
   "games": [
     {
       "id": 70,
@@ -133,8 +133,7 @@
       "series": "求生之路系列",
       "tags": [],
       "owners": [
-        "小寒",
-        "ZZZ"
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -3917,7 +3916,7 @@
     },
     {
       "id": 287390,
-      "name": "地铁：最后的曙光 重制版",
+      "name": "地铁：最后的曙光 重制版",
       "cn": "地铁：最后的曙光 重制版",
       "en": "Metro: Last Light Redux",
       "aliases": [
@@ -4064,6 +4063,20 @@
         "老梁"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 292000,
+      "name": "No More Room in Hell 2",
+      "cn": "地狱已满 2",
+      "en": "No More Room in Hell 2",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -4263,7 +4276,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "ZZZ"
       ],
       "share": false,
       "exclude": "3"
@@ -6303,7 +6317,7 @@
     },
     {
       "id": 413420,
-      "name": "Danganronpa 2: Goodbye Despair",
+      "name": "超級槍彈辯駁2 再會了絕望學園",
       "cn": "超级弹丸论破2：再见了绝望学园",
       "en": "Danganronpa 2: Goodbye Despair",
       "aliases": [
@@ -6550,6 +6564,20 @@
       "owners": [
         "ZZZ",
         "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 427030,
+      "name": "轩辕剑外传 穹之扉",
+      "cn": "轩辕剑外传 穹之扉",
+      "en": "Xuan-Yuan Sword: The Gate of Firmament",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -9320,6 +9348,20 @@
       "exclude": ""
     },
     {
+      "id": 632360,
+      "name": "雨中冒险 2",
+      "cn": "雨中冒险 2",
+      "en": "Risk of Rain 2",
+      "aliases": [],
+      "series": "雨中冒险系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 632470,
       "name": "Disco Elysium",
       "cn": "极乐迪斯科：最终剪辑版",
@@ -9815,6 +9857,62 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 681810,
+      "name": "仙剑奇侠传六",
+      "cn": "仙剑奇侠传六",
+      "en": "Sword and Fairy 6",
+      "aliases": [],
+      "series": "仙剑奇侠传系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 681820,
+      "name": "仙剑奇侠传四",
+      "cn": "仙剑奇侠传四",
+      "en": "Sword and Fairy 4",
+      "aliases": [],
+      "series": "仙剑奇侠传系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 681830,
+      "name": "仙剑奇侠传五",
+      "cn": "仙剑奇侠传五",
+      "en": "Sword and Fairy 5",
+      "aliases": [],
+      "series": "仙剑奇侠传系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 681840,
+      "name": "仙剑奇侠传五前传",
+      "cn": "仙剑奇侠传五前传",
+      "en": "Sword and Fairy 5 Prequel",
+      "aliases": [],
+      "series": "仙剑奇侠传系列",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -12997,7 +13095,7 @@
     },
     {
       "id": 1030840,
-      "name": "《四海兄弟: 最终版》",
+      "name": "《四海兄弟: 最终版》​",
       "cn": " 《四海兄弟: 最终版》​",
       "en": "Mafia: Definitive Edition",
       "aliases": [
@@ -16719,6 +16817,20 @@
       "exclude": ""
     },
     {
+      "id": 1337520,
+      "name": "雨中冒险: 回归",
+      "cn": "雨中冒险: 回归",
+      "en": "Risk of Rain Returns",
+      "aliases": [],
+      "series": "雨中冒险系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1338580,
       "name": "像素哥3",
       "cn": "像素哥3",
@@ -17092,6 +17204,20 @@
       "tags": [],
       "owners": [
         "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1373960,
+      "name": "印蒂卡",
+      "cn": "印蒂卡",
+      "en": "INDIKA",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -18021,6 +18147,34 @@
       "exclude": ""
     },
     {
+      "id": 1508740,
+      "name": "轩辕剑贰",
+      "cn": "轩辕剑贰",
+      "en": "Xuan-Yuan Sword 2",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1508750,
+      "name": "轩辕剑外传 枫之舞",
+      "cn": "轩辕剑外传 枫之舞",
+      "en": "Xuan-Yuan Sword: Dance of the Maple Leaves",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1511460,
       "name": "InfraSpace",
       "cn": "InfraSpace",
@@ -18868,6 +19022,34 @@
       "exclude": ""
     },
     {
+      "id": 1638220,
+      "name": "轩辕剑叁外传 天之痕",
+      "cn": "轩辕剑叁外传 天之痕",
+      "en": "Xuan-Yuan Sword: The Scar of Sky",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1638230,
+      "name": "轩辕剑叁 云和山的彼端",
+      "cn": "轩辕剑叁 云和山的彼端",
+      "en": "Xuan-Yuan Sword: Mists Beyond the Mountains",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1641890,
       "name": "Lust from Beyond: M Edition",
       "cn": "世外之欲：M版",
@@ -19222,6 +19404,20 @@
         "ZZZ"
       ],
       "share": false,
+      "exclude": ""
+    },
+    {
+      "id": 1728520,
+      "name": "轩辕剑伍 一剑凌云山海情",
+      "cn": "轩辕剑伍 一剑凌云山海情",
+      "en": "Xuan-Yuan Sword V",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
       "exclude": ""
     },
     {
@@ -19653,6 +19849,20 @@
       "exclude": ""
     },
     {
+      "id": 1823710,
+      "name": "温泉物语 (Hot Springs Story)",
+      "cn": "温泉物语 (Hot Springs Story)",
+      "en": "Hot Springs Story",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1824220,
       "name": "Chivalry 2",
       "cn": "骑士精神2",
@@ -19823,6 +20033,34 @@
         "小寒",
         "ZZZ",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1870140,
+      "name": "轩辕剑外传 汉之云",
+      "cn": "轩辕剑外传 汉之云",
+      "en": "Xuan-Yuan Sword: The Cloud of Han",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1870150,
+      "name": "轩辕剑外传 云之遥",
+      "cn": "轩辕剑外传 云之遥",
+      "en": "Xuan-Yuan Sword: The Clouds Faraway",
+      "aliases": [],
+      "series": "轩辕剑系列",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -20128,6 +20366,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -20182,6 +20421,34 @@
       "en": "Venture Towns",
       "aliases": [],
       "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1923680,
+      "name": "百货商场物语 (Mega Mall Story)",
+      "cn": "百货商场物语 (Mega Mall Story)",
+      "en": "Mega Mall Story",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1923690,
+      "name": "足球俱乐部物语 (Pocket League Story)",
+      "cn": "足球俱乐部物语 (Pocket League Story)",
+      "en": "Pocket League Story",
+      "aliases": [],
+      "series": "开罗物语系列",
       "tags": [],
       "owners": [
         "ZZZ"
@@ -20374,6 +20641,20 @@
       "exclude": ""
     },
     {
+      "id": 1952160,
+      "name": "百万乐曲物语 (March to a Million)",
+      "cn": "百万乐曲物语 (March to a Million)",
+      "en": "March to a Million",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1952170,
       "name": "美食梦物语 (Cafeteria Nipponica)",
       "cn": "美食梦物语 (Cafeteria Nipponica)",
@@ -20485,6 +20766,20 @@
       "tags": [],
       "owners": [
         "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1967820,
+      "name": "拾光物语 Border Town",
+      "cn": "拾光物语 Border Town",
+      "en": "Border Town",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -20738,6 +21033,20 @@
       "exclude": ""
     },
     {
+      "id": 2019380,
+      "name": "晴空农场物语 (Pocket Harvest)",
+      "cn": "晴空农场物语 (Pocket Harvest)",
+      "en": "Pocket Harvest",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2019810,
       "name": "Boxes",
       "cn": "Boxes",
@@ -20780,6 +21089,20 @@
       "exclude": ""
     },
     {
+      "id": 2050540,
+      "name": "时尚洋品店物语 (Pocket Clothier)",
+      "cn": "时尚洋品店物语 (Pocket Clothier)",
+      "en": "Pocket Clothier",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2050650,
       "name": "Resident Evil 4",
       "cn": "生化危机4 重制版",
@@ -20795,6 +21118,20 @@
       ],
       "owners": [
         "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2054800,
+      "name": "灵犀出版社物语 (Magazine Mogul)",
+      "cn": "灵犀出版社物语 (Magazine Mogul)",
+      "en": "Magazine Mogul",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -20870,6 +21207,34 @@
       "exclude": ""
     },
     {
+      "id": 2072130,
+      "name": "游戏厅物语 (Pocket Arcade Story)",
+      "cn": "游戏厅物语 (Pocket Arcade Story)",
+      "en": "Pocket Arcade Story",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2072140,
+      "name": "宇宙探险物语 (Epic Astro Story)",
+      "cn": "宇宙探险物语 (Epic Astro Story)",
+      "en": "Epic Astro Story",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2072150,
       "name": "星之开罗君 (Kairobotica)",
       "cn": "星之开罗君 (Kairobotica)",
@@ -20912,6 +21277,20 @@
       "exclude": ""
     },
     {
+      "id": 2072430,
+      "name": "发现动物公园 (Wild Park Manager)",
+      "cn": "发现动物公园 (Wild Park Manager)",
+      "en": "Wild Park Manager",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2072450,
       "name": "人中之龙８",
       "cn": "人中之龙８",
@@ -20938,6 +21317,20 @@
       "en": "Rift of the NecroDancer",
       "aliases": [],
       "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2074810,
+      "name": "像素牧场物语 (8-Bit Farm)",
+      "cn": "像素牧场物语 (8-Bit Farm)",
+      "en": "8-Bit Farm",
+      "aliases": [],
+      "series": "开罗物语系列",
       "tags": [],
       "owners": [
         "ZZZ"
@@ -20977,9 +21370,9 @@
     },
     {
       "id": 2083160,
-      "name": "Disfigure",
-      "cn": "Disfigure",
-      "en": "Disfigure",
+      "name": "逐暗之光",
+      "cn": "逐暗之光",
+      "en": "逐暗之光",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -21060,6 +21453,20 @@
       "exclude": ""
     },
     {
+      "id": 2094910,
+      "name": "叠叠高城 Pile Up!",
+      "cn": "叠叠高城 Pile Up!",
+      "en": "Pile Up!",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2096600,
       "name": "Crysis 2 Remastered",
       "cn": "孤岛危机2：重制版",
@@ -21102,6 +21509,20 @@
       "exclude": ""
     },
     {
+      "id": 2101280,
+      "name": "金字塔王国物语 (The Pyraplex)",
+      "cn": "金字塔王国物语 (The Pyraplex)",
+      "en": "The Pyraplex",
+      "aliases": [],
+      "series": "开罗物语系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2101290,
       "name": "电影工坊物语 (Silver Screen Story)",
       "cn": "电影工坊物语 (Silver Screen Story)",
@@ -21122,6 +21543,20 @@
       "en": "Biz Builder Delux",
       "aliases": [],
       "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2102490,
+      "name": "篮球热潮物语 (Basketball Club Story)",
+      "cn": "篮球热潮物语 (Basketball Club Story)",
+      "en": "Basketball Club Story",
+      "aliases": [],
+      "series": "开罗物语系列",
       "tags": [],
       "owners": [
         "ZZZ"
@@ -21696,6 +22131,20 @@
       "exclude": ""
     },
     {
+      "id": 2285550,
+      "name": "多洛可小镇",
+      "cn": "多洛可小镇",
+      "en": "Doloc Town",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2290180,
       "name": "极限国度",
       "cn": "极限国度",
@@ -21860,20 +22309,6 @@
         "ZZZ"
       ],
       "share": true,
-      "exclude": ""
-    },
-    {
-      "id": 2342950,
-      "name": "God Of Weapons",
-      "cn": "God Of Weapons",
-      "en": "God Of Weapons",
-      "aliases": [],
-      "series": "",
-      "tags": [],
-      "owners": [
-        "ZZZ"
-      ],
-      "share": false,
       "exclude": ""
     },
     {
@@ -22440,6 +22875,20 @@
       "exclude": ""
     },
     {
+      "id": 2495100,
+      "name": "Hello Kitty Island Adventure",
+      "cn": "Hello Kitty Island Adventure",
+      "en": "Hello Kitty Island Adventure",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2507950,
       "name": "三角洲行动",
       "cn": "三角洲行动",
@@ -22787,6 +23236,20 @@
       "exclude": ""
     },
     {
+      "id": 2679460,
+      "name": "暗喻幻想：ReFantazio",
+      "cn": "暗喻幻想：ReFantazio",
+      "en": "Metaphor: ReFantazio",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2680010,
       "name": "The First Berserker: Khazan",
       "cn": "第一狂战士：卡赞",
@@ -23032,6 +23495,20 @@
         "ZZZ"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2853730,
+      "name": "碧海黑帆",
+      "cn": "碧海黑帆",
+      "en": "碧海黑帆",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -23346,6 +23823,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 3090080,
+      "name": "与美女合租的99种死法",
+      "cn": "与美女合租的99种死法",
+      "en": "Killed by Love 99 Times",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -23956,6 +24447,20 @@
       ],
       "share": false,
       "exclude": "3"
+    },
+    {
+      "id": 3867950,
+      "name": "造梦西游：无双",
+      "cn": "造梦西游：无双",
+      "en": "造梦西游：无双",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": false,
+      "exclude": ""
     },
     {
       "id": 3883420,
