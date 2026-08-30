@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-08-23",
+  "updated": "2026-08-30",
   "games": [
     {
       "id": 70,
@@ -3154,6 +3154,20 @@
       "exclude": ""
     },
     {
+      "id": 248820,
+      "name": "Risk of Rain (2013)",
+      "cn": "雨中冒险",
+      "en": "Risk of Rain (2013)",
+      "aliases": [],
+      "series": "雨中冒险系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 249130,
       "name": "LEGO® MARVEL Super Heroes",
       "cn": "乐高漫威超级英雄",
@@ -4081,7 +4095,7 @@
     },
     {
       "id": 292030,
-      "name": "巫师 3：狂猎",
+      "name": "《巫师 3：狂猎 - 完全版》",
       "cn": "巫师 3：狂猎",
       "en": "The Witcher 3: Wild Hunt",
       "aliases": [
@@ -6834,6 +6848,20 @@
       "exclude": ""
     },
     {
+      "id": 446840,
+      "name": "Splasher",
+      "cn": "喷射侠",
+      "en": "Splasher",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 447040,
       "name": "Watch_Dogs 2",
       "cn": "看门狗2",
@@ -9019,6 +9047,20 @@
       "exclude": ""
     },
     {
+      "id": 613830,
+      "name": "CHRONO TRIGGER",
+      "cn": "时空之轮",
+      "en": "CHRONO TRIGGER",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 614570,
       "name": "Dishonored®: Death of the Outsider™",
       "cn": "耻辱：界外魔之死",
@@ -10844,6 +10886,20 @@
         "老胡",
         "小寒",
         "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 775500,
+      "name": "绯红结系",
+      "cn": "绯红结系",
+      "en": "Scarlet Nexus",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -13706,6 +13762,20 @@
       "exclude": ""
     },
     {
+      "id": 1088790,
+      "name": "反叛公司：局势升级 Rebel Inc: Escalation",
+      "cn": "反叛公司：局势升级 Rebel Inc: Escalation",
+      "en": "Rebel Inc: Escalation",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1088850,
       "name": "Marvel's Guardians of the Galaxy",
       "cn": "漫威银河护卫队",
@@ -14512,6 +14582,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1160490,
+      "name": "陶艺大师",
+      "cn": "陶艺大师",
+      "en": "Master Of Pottery",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -20019,6 +20103,20 @@
       "exclude": ""
     },
     {
+      "id": 1867240,
+      "name": "WARDOGS",
+      "cn": "战狗",
+      "en": "WARDOGS",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1868140,
       "name": "潜水员戴夫 DAVE THE DIVER",
       "cn": "潜水员戴夫 DAVE THE DIVER",
@@ -23506,6 +23604,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": false,
@@ -24304,10 +24403,38 @@
       "exclude": ""
     },
     {
+      "id": 3659410,
+      "name": "幻兽大农场：放置好时光",
+      "cn": "幻兽大农场：放置好时光",
+      "en": "Your Big, Cute Monster Farm",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 3683770,
       "name": "奶茶店模拟器 - 重生之我在冰堡甜城当店长",
       "cn": "奶茶店模拟器 - 重生之我在冰堡甜城当店长",
       "en": "Boba Cafe Simulator",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 3706590,
+      "name": "毛茸茸食堂物语",
+      "cn": "毛茸茸食堂物语",
+      "en": "Fluffy Kitchen Saga",
       "aliases": [],
       "series": "",
       "tags": [],
