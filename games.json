@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-08-30",
+  "updated": "2026-09-05",
   "games": [
     {
       "id": 70,
@@ -3538,6 +3538,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -6331,7 +6332,7 @@
     },
     {
       "id": 413420,
-      "name": "超級槍彈辯駁2 再會了絕望學園",
+      "name": "Danganronpa 2: Goodbye Despair",
       "cn": "超级弹丸论破2：再见了绝望学园",
       "en": "Danganronpa 2: Goodbye Despair",
       "aliases": [
@@ -8168,8 +8169,8 @@
     },
     {
       "id": 553850,
-      "name": "HELLDIVERS™ 2",
-      "cn": "绝地潜兵2",
+      "name": "HELLDIVERS™ 绝地潜兵2",
+      "cn": "HELLDIVERS™ 绝地潜兵2",
       "en": "HELLDIVERS™ 2",
       "aliases": [],
       "series": "",
@@ -9471,6 +9472,22 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 635940,
+      "name": "Little Busters! English Edition",
+      "cn": "Little Busters! English Edition",
+      "en": "Little Busters! English Edition",
+      "aliases": [],
+      "series": "",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -10837,6 +10854,20 @@
       "name": "sppl-魔女爱丽丝 第一章 春日已至2",
       "cn": "sppl-魔女爱丽丝 第一章 春日已至2",
       "en": "Supipara - Chapter 2 Spring Has Come!",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 764790,
+      "name": "信使",
+      "cn": "信使",
+      "en": "The Messenger",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -13804,6 +13835,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1089980,
+      "name": "The Henry Stickmin Collection",
+      "cn": "火柴人亨利合集",
+      "en": "The Henry Stickmin Collection",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -17879,6 +17924,20 @@
       "exclude": ""
     },
     {
+      "id": 1462040,
+      "name": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "cn": "最终幻想7+重制版",
+      "en": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "aliases": [],
+      "series": "最终幻想系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1462570,
       "name": "Lost in Random™",
       "cn": "迷失随机",
@@ -19845,6 +19904,20 @@
       "exclude": ""
     },
     {
+      "id": 1810820,
+      "name": "世界树的迷宫Ⅲ 星海的访客 HD REMASTER",
+      "cn": "世界树的迷宫Ⅲ 星海的访客 HD REMASTER",
+      "en": "Etrian Odyssey III HD",
+      "aliases": [],
+      "series": "世界树的迷宫系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1811040,
       "name": "极圈以南",
       "cn": "极圈以南",
@@ -20136,6 +20209,34 @@
       "exclude": ""
     },
     {
+      "id": 1868170,
+      "name": "世界树的迷宫Ⅱ 诸王的圣杯 HD REMASTER",
+      "cn": "世界树的迷宫Ⅱ 诸王的圣杯 HD REMASTER",
+      "en": "Etrian Odyssey II HD",
+      "aliases": [],
+      "series": "世界树的迷宫系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1868180,
+      "name": "世界树的迷宫 HD REMASTER",
+      "cn": "世界树的迷宫 HD REMASTER",
+      "en": "Etrian Odyssey HD",
+      "aliases": [],
+      "series": "世界树的迷宫系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1870140,
       "name": "轩辕剑外传 汉之云",
       "cn": "轩辕剑外传 汉之云",
@@ -20409,6 +20510,20 @@
       "tags": [],
       "owners": [
         "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1918450,
+      "name": "HunterX",
+      "cn": "HunterX",
+      "en": "HunterX",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -20739,6 +20854,20 @@
       "exclude": ""
     },
     {
+      "id": 1948280,
+      "name": "Stacklands",
+      "cn": "堆叠大陆",
+      "en": "Stacklands",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1952160,
       "name": "百万乐曲物语 (March to a Million)",
       "cn": "百万乐曲物语 (March to a Million)",
@@ -20762,6 +20891,20 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1953520,
+      "name": "WRC Generations - The FIA WRC Official Game",
+      "cn": "世界越野冠军赛",
+      "en": "WRC Generations - The FIA WRC Official Game",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -22171,6 +22314,20 @@
       "exclude": ""
     },
     {
+      "id": 2270750,
+      "name": "黑枪神悟空",
+      "cn": "黑枪神悟空",
+      "en": "Black Gunner Wukong",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2272400,
       "name": "站点连连 Station to Station",
       "cn": "站点连连 Station to Station",
@@ -23306,6 +23463,20 @@
       "exclude": ""
     },
     {
+      "id": 2667120,
+      "name": "弹球亿万富翁",
+      "cn": "弹球亿万富翁",
+      "en": "Ballionaire",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2670630,
       "name": "Supermarket Simulator",
       "cn": "超市模拟器",
@@ -23596,6 +23767,22 @@
       "exclude": ""
     },
     {
+      "id": 2850310,
+      "name": "Kanon",
+      "cn": "Kanon",
+      "en": "Kanon",
+      "aliases": [],
+      "series": "",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2853730,
       "name": "碧海黑帆",
       "cn": "碧海黑帆",
@@ -23681,6 +23868,20 @@
       "exclude": ""
     },
     {
+      "id": 2909400,
+      "name": "FINAL FANTASY VII REBIRTH",
+      "cn": "最终幻想7+重生",
+      "en": "FINAL FANTASY VII REBIRTH",
+      "aliases": [],
+      "series": "最终幻想系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2917350,
       "name": "拉杆英雄",
       "cn": "拉杆英雄",
@@ -23736,6 +23937,22 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2983250,
+      "name": "AIR",
+      "cn": "AIR",
+      "en": "AIR",
+      "aliases": [],
+      "series": "",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
       ],
       "share": true,
       "exclude": ""
