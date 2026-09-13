@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-09-05",
+  "updated": "2026-09-13",
   "games": [
     {
       "id": 70,
@@ -4096,7 +4096,7 @@
     },
     {
       "id": 292030,
-      "name": "《巫师 3：狂猎 - 完全版》",
+      "name": "巫师 3：狂猎 - 完全版",
       "cn": "巫师 3：狂猎",
       "en": "The Witcher 3: Wild Hunt",
       "aliases": [
@@ -4143,6 +4143,20 @@
       "owners": [
         "木贰",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 296490,
+      "name": "GemCraft - Chasing Shadows",
+      "cn": "宝石争霸：暗影追击",
+      "en": "GemCraft - Chasing Shadows",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -6198,6 +6212,20 @@
       "exclude": ""
     },
     {
+      "id": 408410,
+      "name": "X-Morph: Defense",
+      "cn": "变形机甲：防卫战",
+      "en": "X-Morph: Defense",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 410890,
       "name": "Higurashi When They Cry Hou - Ch.2 Watanagashi",
       "cn": "寒蝉鸣泣之时：绵流",
@@ -6325,6 +6353,7 @@
       "series": "弹丸论破系列",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒"
       ],
       "share": true,
@@ -11115,6 +11144,20 @@
       "exclude": ""
     },
     {
+      "id": 798490,
+      "name": "Othercide",
+      "cn": "彼岸花",
+      "en": "Othercide",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 802870,
       "name": "The Ditzy Demons Are in Love With Me",
       "cn": "与我恋爱的废柴恶魔",
@@ -13014,20 +13057,6 @@
       "exclude": ""
     },
     {
-      "id": 1013320,
-      "name": "火之石 – 放置点击英雄RPG",
-      "cn": "火之石 – 放置点击英雄RPG",
-      "en": "火之石 – 放置点击英雄RPG",
-      "aliases": [],
-      "series": "",
-      "tags": [],
-      "owners": [
-        "老梁"
-      ],
-      "share": false,
-      "exclude": ""
-    },
-    {
       "id": 1016920,
       "name": "Unrailed!",
       "cn": "一起开火车！",
@@ -13434,6 +13463,20 @@
       "exclude": ""
     },
     {
+      "id": 1045720,
+      "name": "The Coma 2: Vicious Sisters",
+      "cn": "昏迷2：恶毒姐妹",
+      "en": "The Coma 2: Vicious Sisters",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1047440,
       "name": "DATE A LIVE: Rio Reincarnation",
       "cn": "约会大作战：凛绪轮回",
@@ -13687,6 +13730,20 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1069690,
+      "name": "欺诈领主",
+      "cn": "欺诈领主",
+      "en": "Rogue Lords",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -14134,6 +14191,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1119980,
+      "name": "In Sound Mind",
+      "cn": "神志清醒",
+      "en": "In Sound Mind",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -15129,6 +15200,20 @@
       "exclude": ""
     },
     {
+      "id": 1203630,
+      "name": "蒂德莉特的奇境冒险/Record of Lodoss War-Deedlit in Wonder Labyrinth-",
+      "cn": "蒂德莉特的奇境冒险/Record of Lodoss War-Deedlit in Wonder Labyrinth-",
+      "en": "蒂德莉特的奇境冒险/Record of Lodoss War-Deedlit in Wonder Labyrinth-",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1206060,
       "name": "Happy Game",
       "cn": "快乐游戏",
@@ -15847,6 +15932,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1255650,
+      "name": "几何竞技场",
+      "cn": "几何竞技场",
+      "en": "Geometry Arena",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -19370,6 +19469,20 @@
       "exclude": ""
     },
     {
+      "id": 1667700,
+      "name": "几何竞技场2",
+      "cn": "几何竞技场2",
+      "en": "Geometry Arena 2",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1669980,
       "name": "火山的女儿",
       "cn": "火山的女儿",
@@ -19424,6 +19537,20 @@
       "owners": [
         "ZZZ",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1684350,
+      "name": "奇唤士",
+      "cn": "奇唤士",
+      "en": "The Thaumaturge",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -19693,6 +19820,20 @@
       "exclude": ""
     },
     {
+      "id": 1766740,
+      "name": "Choo-Choo Charles",
+      "cn": "小火车查尔斯",
+      "en": "Choo-Choo Charles",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1771300,
       "name": "天国：拯救2",
       "cn": "天国：拯救2",
@@ -19841,6 +19982,20 @@
       "exclude": ""
     },
     {
+      "id": 1796220,
+      "name": "莱卡：鲜血铸就",
+      "cn": "莱卡：鲜血铸就",
+      "en": "Laika: Aged Through Blood",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1803400,
       "name": "Beneath Oresa",
       "cn": "欧瑞沙之下",
@@ -19927,6 +20082,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1815570,
+      "name": "王牌与冒险",
+      "cn": "王牌与冒险",
+      "en": "Aces and Adventures",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -21073,6 +21242,20 @@
       "exclude": ""
     },
     {
+      "id": 1975360,
+      "name": "DRAINUS",
+      "cn": "逆流银翼",
+      "en": "DRAINUS",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1977170,
       "name": "退潮",
       "cn": "退潮",
@@ -21834,6 +22017,20 @@
       "exclude": ""
     },
     {
+      "id": 2106670,
+      "name": "Gatekeeper",
+      "cn": "心门守卫",
+      "en": "Gatekeeper",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2113310,
       "name": "Morning Kiss",
       "cn": "Morning Kiss",
@@ -21939,6 +22136,20 @@
       "name": "天命奇御：归途",
       "cn": "天命奇御：归途",
       "en": "Fate Seeker: Journey",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2132850,
+      "name": "Rabbit and Steel",
+      "cn": "兔子与钢铁",
+      "en": "Rabbit and Steel",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -22813,6 +23024,20 @@
       "exclude": "3"
     },
     {
+      "id": 2404370,
+      "name": "幻日夜羽 -湛海耀光-",
+      "cn": "幻日夜羽 -湛海耀光-",
+      "en": "幻日夜羽 -湛海耀光-",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2407270,
       "name": "AI LIMIT 无限机兵",
       "cn": "AI LIMIT 无限机兵",
@@ -23491,6 +23716,20 @@
       "exclude": ""
     },
     {
+      "id": 2671230,
+      "name": "幻刃奇美拉",
+      "cn": "幻刃奇美拉",
+      "en": "幻刃奇美拉",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2678640,
       "name": "朝露：境界旅程",
       "cn": "朝露：境界旅程",
@@ -23570,6 +23809,20 @@
       "name": "彼方的她-Aliya",
       "cn": "彼方的她-Aliya",
       "en": "Aliya: Timelink",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2719060,
+      "name": "幻耀的羽毛 / Mirage Feathers",
+      "cn": "幻耀的羽毛 / Mirage Feathers",
+      "en": "幻耀的羽毛 / Mirage Feathers",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -23906,6 +24159,20 @@
       "owners": [
         "老胡",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2939790,
+      "name": "星之旅Lunarium",
+      "cn": "星之旅Lunarium",
+      "en": "星之旅Lunarium",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
       ],
       "share": true,
       "exclude": ""
