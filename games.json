@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-09-13",
+  "updated": "2026-09-20",
   "games": [
     {
       "id": 70,
@@ -1406,10 +1406,15 @@
       "name": "Dead Rising 2",
       "cn": "丧尸围城2",
       "en": "Dead Rising 2",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "dead-rising",
+        "丧尸围城",
+        "dead rising"
+      ],
+      "series": "丧尸围城系列",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -1427,6 +1432,24 @@
         "ZZZ",
         "木贰",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 45770,
+      "name": "Dead Rising 2: Off the Record",
+      "cn": "丧尸围城2：绝密档案",
+      "en": "Dead Rising 2: Off the Record",
+      "aliases": [
+        "dead-rising",
+        "丧尸围城",
+        "绝密档案"
+      ],
+      "series": "丧尸围城系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -3112,12 +3135,17 @@
       "name": "Crypt of the NecroDancer",
       "cn": "节奏地牢",
       "en": "Crypt of the NecroDancer",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "necrodancer",
+        "节奏地牢",
+        "necro dancer"
+      ],
+      "series": "节奏地牢系列",
       "tags": [],
       "owners": [
         "老胡",
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -3545,6 +3573,24 @@
       "exclude": ""
     },
     {
+      "id": 265550,
+      "name": "Dead Rising 3",
+      "cn": "丧尸围城3：天启版",
+      "en": "Dead Rising 3",
+      "aliases": [
+        "dead-rising",
+        "丧尸围城",
+        "天启版"
+      ],
+      "series": "丧尸围城系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 265930,
       "name": "Goat Simulator",
       "cn": "模拟山羊",
@@ -3849,8 +3895,12 @@
       "name": "Salt and Sanctuary",
       "cn": "盐与避难所",
       "en": "Salt and Sanctuary",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "salt",
+        "盐与避难所",
+        "salt and sanctuary"
+      ],
+      "series": "盐与系列",
       "tags": [],
       "owners": [
         "老胡",
@@ -4007,12 +4057,18 @@
       "name": "刺客信条：大革命",
       "cn": "刺客信条：大革命",
       "en": "刺客信条：大革命",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "大革命"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
       "owners": [
+        "老胡",
+        "ZZZ",
         "木贰",
         "老梁"
       ],
@@ -5211,12 +5267,18 @@
       "name": "Assassin’s Creed® Chronicles: China",
       "cn": "刺客信条编年史：中国",
       "en": "Assassin’s Creed® Chronicles: China",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "编年史",
+        "中国"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
       "owners": [
+        "老胡",
         "木贰",
         "老梁"
       ],
@@ -5308,12 +5370,18 @@
       "name": "Assassin’s Creed® Chronicles: Russia",
       "cn": "刺客信条编年史：俄罗斯",
       "en": "Assassin’s Creed® Chronicles: Russia",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "编年史",
+        "俄罗斯"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
       "owners": [
+        "老胡",
         "木贰",
         "老梁"
       ],
@@ -5325,12 +5393,18 @@
       "name": "Assassin’s Creed® Chronicles: India",
       "cn": "刺客信条编年史：印度",
       "en": "Assassin’s Creed® Chronicles: India",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "编年史",
+        "印度"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
       "owners": [
+        "老胡",
         "木贰",
         "老梁"
       ],
@@ -5443,6 +5517,24 @@
         "木贰"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 365590,
+      "name": "Tom Clancy's The Division",
+      "cn": "全境封锁",
+      "en": "Tom Clancy's The Division",
+      "aliases": [
+        "the-division",
+        "全境封锁",
+        "division"
+      ],
+      "series": "全境封锁系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -5571,6 +5663,27 @@
         "木贰"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 368500,
+      "name": "刺客信条：枭雄",
+      "cn": "刺客信条：枭雄",
+      "en": "刺客信条：枭雄",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "枭雄"
+      ],
+      "series": "刺客信条系列",
+      "tags": [
+        "刺客信条"
+      ],
+      "owners": [
+        "老胡",
+        "ZZZ"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -6929,6 +7042,20 @@
       "exclude": ""
     },
     {
+      "id": 449610,
+      "name": "怪物男孩和中咒王国",
+      "cn": "怪物男孩和中咒王国",
+      "en": "Monster Boy And The Cursed Kingdom",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": "76561199480507822"
+    },
+    {
       "id": 452060,
       "name": "Caveblazers",
       "cn": "洞窟开拓者",
@@ -7854,6 +7981,20 @@
       "exclude": ""
     },
     {
+      "id": 524440,
+      "name": "Tom Clancy's The Division PTS",
+      "cn": "Tom Clancy's The Division PTS",
+      "en": "Tom Clancy's The Division PTS",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 525620,
       "name": "Octogeddon",
       "cn": "八爪怪",
@@ -8031,6 +8172,23 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 543460,
+      "name": "Dead Rising 4",
+      "cn": "丧尸围城4",
+      "en": "Dead Rising 4",
+      "aliases": [
+        "dead-rising",
+        "丧尸围城"
+      ],
+      "series": "丧尸围城系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -8922,7 +9080,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -11204,8 +11363,12 @@
       "name": "Assassin's Creed Odyssey",
       "cn": "刺客信条：奥德赛",
       "en": "Assassin's Creed Odyssey",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "奥德赛"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
@@ -12050,6 +12213,24 @@
       "exclude": ""
     },
     {
+      "id": 899970,
+      "name": "NEKOPARA Extra",
+      "cn": "NEKOPARA Extra",
+      "en": "NEKOPARA Extra",
+      "aliases": [
+        "nekopara",
+        "巧克力与香子兰",
+        "猫娘"
+      ],
+      "series": "NEKOPARA系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 903950,
       "name": "Last Oasis",
       "cn": "最后的绿洲",
@@ -12088,12 +12269,17 @@
       "name": "刺客信条3：高清重制版",
       "cn": "刺客信条3：高清重制版",
       "en": "刺客信条3：高清重制版",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "刺客信条3"
+      ],
+      "series": "刺客信条系列",
       "tags": [
         "刺客信条"
       ],
       "owners": [
+        "ZZZ",
         "木贰"
       ],
       "share": false,
@@ -12683,6 +12869,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "木贰",
         "老梁"
       ],
@@ -14313,8 +14500,12 @@
       "name": "Ghostrunner - 幽灵行者",
       "cn": "Ghostrunner - 幽灵行者",
       "en": "Ghostrunner",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "ghostrunner",
+        "幽灵行者",
+        "ghost runner"
+      ],
+      "series": "幽灵行者系列",
       "tags": [],
       "owners": [
         "小寒"
@@ -15000,6 +15191,20 @@
         "ZZZ"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1188930,
+      "name": "超时空方舟",
+      "cn": "超时空方舟",
+      "en": "超时空方舟",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -16427,6 +16632,20 @@
       "exclude": ""
     },
     {
+      "id": 1284210,
+      "name": "Guild Wars 2®",
+      "cn": "激战2",
+      "en": "Guild Wars 2®",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 1285190,
       "name": "无主之地®4",
       "cn": "无主之地®4",
@@ -17623,6 +17842,20 @@
       "exclude": ""
     },
     {
+      "id": 1421290,
+      "name": "塑战核心",
+      "cn": "塑战核心",
+      "en": "塑战核心",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 1424660,
       "name": "9-nine-雪色雪花雪之痕",
       "cn": "9-nine-雪色雪花雪之痕",
@@ -17716,6 +17949,24 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1437400,
+      "name": "Salt and Sacrifice",
+      "cn": "盐与献祭",
+      "en": "Salt and Sacrifice",
+      "aliases": [
+        "salt",
+        "盐与献祭",
+        "salt and sacrifice"
+      ],
+      "series": "盐与系列",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -18813,11 +19064,16 @@
       "name": "深空梦里人",
       "cn": "深空梦里人",
       "en": "Citizen Sleeper",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "citizen-sleeper",
+        "深空梦里人",
+        "citizen sleeper"
+      ],
+      "series": "深空梦里人系列",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -19097,6 +19353,34 @@
       "exclude": ""
     },
     {
+      "id": 1608640,
+      "name": "孤狼 OTXO",
+      "cn": "孤狼 OTXO",
+      "en": "孤狼 OTXO",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
+      "id": 1618380,
+      "name": "Spellmasons",
+      "cn": "Spellmasons",
+      "en": "Spellmasons",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1621310,
       "name": "苏菲的炼金工房２ ～不可思议梦的炼金术士～",
       "cn": "苏菲的炼金工房２ ～不可思议梦的炼金术士～",
@@ -19258,6 +19542,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "小寒",
         "木贰"
       ],
       "share": true,
@@ -20355,7 +20640,7 @@
       "owners": [
         "ZZZ"
       ],
-      "share": true,
+      "share": false,
       "exclude": ""
     },
     {
@@ -21513,6 +21798,20 @@
       "exclude": ""
     },
     {
+      "id": 2026000,
+      "name": "我们的冒险者公会",
+      "cn": "我们的冒险者公会",
+      "en": "Our Adventurer Guild",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2050540,
       "name": "时尚洋品店物语 (Pocket Clothier)",
       "cn": "时尚洋品店物语 (Pocket Clothier)",
@@ -21739,8 +22038,12 @@
       "name": "节奏裂隙",
       "cn": "节奏裂隙",
       "en": "Rift of the NecroDancer",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "necrodancer",
+        "节奏裂隙",
+        "necro dancer"
+      ],
+      "series": "节奏地牢系列",
       "tags": [],
       "owners": [
         "ZZZ"
@@ -22154,6 +22457,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "小寒",
         "木贰"
       ],
       "share": true,
@@ -22197,6 +22501,24 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2144740,
+      "name": "幽灵行者 2（Ghostrunner 2）",
+      "cn": "幽灵行者 2（Ghostrunner 2）",
+      "en": "Ghostrunner 2",
+      "aliases": [
+        "ghostrunner",
+        "幽灵行者",
+        "幽灵行者2"
+      ],
+      "series": "幽灵行者系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -22290,6 +22612,20 @@
       "name": "双点博物馆",
       "cn": "双点博物馆",
       "en": "Two Point Museum",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2187290,
+      "name": "墙世界",
+      "cn": "墙世界",
+      "en": "Wall World",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -22404,6 +22740,7 @@
       "owners": [
         "老胡",
         "小寒",
+        "ZZZ",
         "老梁"
       ],
       "share": false,
@@ -22450,6 +22787,24 @@
       ],
       "share": false,
       "exclude": "3"
+    },
+    {
+      "id": 2221490,
+      "name": "全境封锁2",
+      "cn": "全境封锁2",
+      "en": "全境封锁2",
+      "aliases": [
+        "the-division",
+        "全境封锁",
+        "division"
+      ],
+      "series": "全境封锁系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": false,
+      "exclude": ""
     },
     {
       "id": 2231380,
@@ -22863,6 +23218,24 @@
       "exclude": ""
     },
     {
+      "id": 2369390,
+      "name": "Far Cry 6",
+      "cn": "孤岛惊魂6",
+      "en": "Far Cry 6",
+      "aliases": [
+        "far-cry",
+        "孤岛惊魂",
+        "far cry 6"
+      ],
+      "series": "孤岛惊魂系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 2375080,
       "name": "Sakura Bunny Girls",
       "cn": "Sakura Bunny Girls",
@@ -23209,6 +23582,38 @@
       "exclude": ""
     },
     {
+      "id": 2441950,
+      "name": "Tom Clancy's The Division 2 - Test Server",
+      "cn": "Tom Clancy's The Division 2 - Test Server",
+      "en": "Tom Clancy's The Division 2 - Test Server",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2442460,
+      "name": "深空梦里人2：逐星之旅",
+      "cn": "深空梦里人2：逐星之旅",
+      "en": "Citizen Sleeper 2: Starward Vector",
+      "aliases": [
+        "citizen-sleeper",
+        "深空梦里人",
+        "逐星之旅"
+      ],
+      "series": "深空梦里人系列",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2456860,
       "name": "最后列车 - The Last Train",
       "cn": "最后列车 - The Last Train",
@@ -23330,6 +23735,20 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2488590,
+      "name": "Dungeons of Blood and Dream",
+      "cn": "Dungeons of Blood and Dream",
+      "en": "Dungeons of Blood and Dream",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -23465,6 +23884,24 @@
       "exclude": ""
     },
     {
+      "id": 2527390,
+      "name": "Dead Rising Deluxe Remaster",
+      "cn": "丧尸围城：豪华复刻版",
+      "en": "Dead Rising Deluxe Remaster",
+      "aliases": [
+        "dead-rising",
+        "丧尸围城",
+        "豪华复刻版"
+      ],
+      "series": "丧尸围城系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2527500,
       "name": "米塔 MiSide",
       "cn": "米塔 MiSide",
@@ -23551,6 +23988,20 @@
       ],
       "share": false,
       "exclude": "3"
+    },
+    {
+      "id": 2564520,
+      "name": "迷失混沌王国：永恒之骰",
+      "cn": "迷失混沌王国：永恒之骰",
+      "en": "迷失混沌王国：永恒之骰",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
     },
     {
       "id": 2567190,
@@ -23861,6 +24312,20 @@
       "exclude": ""
     },
     {
+      "id": 2751000,
+      "name": "波斯王子：失落的王冠",
+      "cn": "波斯王子：失落的王冠",
+      "en": "波斯王子：失落的王冠",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 2752710,
       "name": "WHAT THE PAK?!",
       "cn": "WHAT THE PAK?!",
@@ -24069,6 +24534,20 @@
       "name": "一起来扫雷",
       "cn": "一起来扫雷",
       "en": "Let's Minesweeper",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2870340,
+      "name": "驯牌师 Decktamer",
+      "cn": "驯牌师 Decktamer",
+      "en": "Decktamer",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -24321,10 +24800,44 @@
       "exclude": ""
     },
     {
+      "id": 3035570,
+      "name": "刺客信条：幻景",
+      "cn": "刺客信条：幻景",
+      "en": "刺客信条：幻景",
+      "aliases": [
+        "assassin-s-creed",
+        "刺客信条",
+        "幻景"
+      ],
+      "series": "刺客信条系列",
+      "tags": [
+        "刺客信条"
+      ],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 3036080,
       "name": "沙威玛传奇 - Shawarma Legend",
       "cn": "沙威玛传奇 - Shawarma Legend",
       "en": "Shawarma Legend",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 3039500,
+      "name": "万象群侠传",
+      "cn": "万象群侠传",
+      "en": "万象群侠传",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -24742,8 +25255,13 @@
       "name": "空之轨迹 the 1st",
       "cn": "空之轨迹 the 1st",
       "en": "Sora no Kiseki the 1st",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "trails",
+        "轨迹",
+        "英雄传说",
+        "空之轨迹"
+      ],
+      "series": "轨迹系列",
       "tags": [
         "轨迹"
       ],
@@ -24882,6 +25400,24 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 3655150,
+      "name": "NEKOPARA After",
+      "cn": "NEKOPARA After",
+      "en": "NEKOPARA After",
+      "aliases": [
+        "nekopara",
+        "巧克力与香子兰",
+        "猫娘"
+      ],
+      "series": "NEKOPARA系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -25211,6 +25747,27 @@
         "老梁"
       ],
       "share": false,
+      "exclude": ""
+    },
+    {
+      "id": 4225980,
+      "name": "空之轨迹 the 2nd",
+      "cn": "空之轨迹 the 2nd",
+      "en": "Trails in the Sky 2nd Chapter",
+      "aliases": [
+        "trails",
+        "轨迹",
+        "英雄传说",
+        "空之轨迹"
+      ],
+      "series": "轨迹系列",
+      "tags": [
+        "轨迹"
+      ],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
       "exclude": ""
     },
     {
