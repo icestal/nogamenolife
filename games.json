@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-09-20",
+  "updated": "2026-09-27",
   "games": [
     {
       "id": 70,
@@ -1843,6 +1843,24 @@
       "exclude": ""
     },
     {
+      "id": 201790,
+      "name": "Orcs Must Die! 2",
+      "cn": "兽人必须死2",
+      "en": "Orcs Must Die! 2",
+      "aliases": [
+        "orcs-must-die",
+        "兽人必须死",
+        "omd"
+      ],
+      "series": "兽人必须死系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 201810,
       "name": "Wolfenstein: The New Order",
       "cn": "德军总部：新秩序",
@@ -2227,6 +2245,24 @@
       "tags": [],
       "owners": [
         "小寒",
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 213610,
+      "name": "Sonic Adventure™ 2",
+      "cn": "索尼克大冒险2",
+      "en": "Sonic Adventure™ 2 ",
+      "aliases": [
+        "sonic",
+        "索尼克",
+        "冒险2"
+      ],
+      "series": "索尼克系列",
+      "tags": [],
+      "owners": [
         "ZZZ"
       ],
       "share": true,
@@ -4377,6 +4413,25 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 306130,
+      "name": "《上古卷轴®OL》",
+      "cn": "《上古卷轴®OL》",
+      "en": "The Elder Scrolls Online",
+      "aliases": [
+        "elder-scrolls",
+        "上古卷轴",
+        "eso",
+        "ol"
+      ],
+      "series": "上古卷轴系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -12200,7 +12255,7 @@
     },
     {
       "id": 899770,
-      "name": "Last Epoch",
+      "name": "最后纪元",
       "cn": "最后纪元",
       "en": "Last Epoch",
       "aliases": [],
@@ -13774,6 +13829,7 @@
       "series": "奥日系列",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒",
         "木贰",
         "老梁"
@@ -17033,6 +17089,20 @@
       "exclude": ""
     },
     {
+      "id": 1325040,
+      "name": "Keylocker | Turn Based Cyberpunk Action",
+      "cn": "锁音之匣：回合制赛博朋克动作",
+      "en": "Keylocker | Turn Based Cyberpunk Action",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1325200,
       "name": "仁王２ Complete Edition",
       "cn": "仁王２ Complete Edition",
@@ -17795,6 +17865,25 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1413480,
+      "name": "真・女神转生III NOCTURNE HD REMASTER",
+      "cn": "真・女神转生III NOCTURNE HD REMASTER",
+      "en": "Shin Megami Tensei III Nocturne HD Remaster",
+      "aliases": [
+        "shin-megami-tensei",
+        "真女神转生",
+        "女神转生",
+        "nocturne"
+      ],
+      "series": "真·女神转生系列",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -20864,6 +20953,21 @@
       "exclude": ""
     },
     {
+      "id": 1899060,
+      "name": "化妆镜～黄金之梦",
+      "cn": "化妆镜～黄金之梦",
+      "en": "Pocket Mirror ~ GoldenerTraum",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡",
+        "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1902690,
       "name": "Fate/Samurai Remnant",
       "cn": "Fate/Samurai Remnant",
@@ -22557,6 +22661,25 @@
       "exclude": ""
     },
     {
+      "id": 2161700,
+      "name": "女神异闻录３ Reload",
+      "cn": "女神异闻录３ Reload",
+      "en": "Persona 3 Reload",
+      "aliases": [
+        "persona",
+        "女神异闻录",
+        "p3",
+        "reload"
+      ],
+      "series": "女神异闻录系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 2162800,
       "name": "异形工厂2",
       "cn": "异形工厂2",
@@ -23858,6 +23981,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2525310,
+      "name": "方块公国 (Drop Duchy)",
+      "cn": "方块公国 (Drop Duchy)",
+      "en": "Drop Duchy",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
