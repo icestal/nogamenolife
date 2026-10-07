@@ -32,7 +32,8 @@
       "series": "半条命系列",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -100,8 +101,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒",
-        "老梁"
+        "老胡",
+        "小寒"
       ],
       "share": false,
       "exclude": "3"
@@ -115,6 +116,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒"
       ],
       "share": false,
@@ -133,7 +135,8 @@
       "series": "求生之路系列",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -167,6 +170,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒"
       ],
       "share": false,
@@ -1570,8 +1574,7 @@
         "无主之地"
       ],
       "owners": [
-        "ZZZ",
-        "老梁"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -1711,7 +1714,6 @@
       "owners": [
         "老胡",
         "小寒",
-        "ZZZ",
         "木贰",
         "老梁"
       ],
@@ -3036,8 +3038,7 @@
       "owners": [
         "小寒",
         "ZZZ",
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -3725,7 +3726,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
         "木贰",
         "老梁"
       ],
@@ -3936,8 +3936,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -4433,8 +4432,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒",
-        "ZZZ"
+        "小寒"
       ],
       "share": false,
       "exclude": "3"
@@ -4767,7 +4765,11 @@
       "series": "奇异人生系列",
       "tags": [],
       "owners": [
-        "小寒"
+        "老胡",
+        "小寒",
+        "ZZZ",
+        "木贰",
+        "老梁"
       ],
       "share": false,
       "exclude": "3"
@@ -4964,7 +4966,6 @@
         "KEY社"
       ],
       "owners": [
-        "小寒",
         "木贰"
       ],
       "share": true,
@@ -5691,10 +5692,8 @@
         "空洞骑士"
       ],
       "owners": [
-        "老胡",
         "小寒",
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -5930,8 +5929,7 @@
       ],
       "owners": [
         "小寒",
-        "ZZZ",
-        "老梁"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -6060,8 +6058,7 @@
       "series": "死亡岛系列",
       "tags": [],
       "owners": [
-        "ZZZ",
-        "木贰"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -8092,7 +8089,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
         "ZZZ",
         "老梁"
       ],
@@ -8559,7 +8555,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
         "老梁"
       ],
       "share": true,
@@ -9070,7 +9065,6 @@
         "战锤"
       ],
       "owners": [
-        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -9842,8 +9836,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -10277,8 +10270,7 @@
       "series": "仙剑奇侠传系列",
       "tags": [],
       "owners": [
-        "老胡",
-        "老梁"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -10759,7 +10751,6 @@
       "owners": [
         "老胡",
         "小寒",
-        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -12459,8 +12450,7 @@
       "series": "RustyLake系列",
       "tags": [],
       "owners": [
-        "小寒",
-        "木贰"
+        "小寒"
       ],
       "share": false,
       "exclude": "3"
@@ -15264,8 +15254,7 @@
       "tags": [],
       "owners": [
         "小寒",
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -16583,8 +16572,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -17208,7 +17196,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
         "老梁"
       ],
       "share": true,
@@ -17876,7 +17863,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -18126,8 +18112,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ",
-        "木贰",
         "老梁"
       ],
       "share": true,
@@ -18584,8 +18568,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰",
-        "老梁"
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -19491,8 +19474,7 @@
       "series": "东方Project",
       "tags": [],
       "owners": [
-        "小寒",
-        "老梁"
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -19881,7 +19863,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒",
         "木贰"
       ],
       "share": true,
@@ -20195,7 +20176,6 @@
       "owners": [
         "老胡",
         "小寒",
-        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -20281,7 +20261,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
         "小寒",
         "老梁"
       ],
@@ -20472,7 +20451,6 @@
       "series": "天国拯救系列",
       "tags": [],
       "owners": [
-        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -20744,8 +20722,7 @@
       "tags": [],
       "owners": [
         "老胡",
-        "小寒",
-        "老梁"
+        "小寒"
       ],
       "share": true,
       "exclude": ""
@@ -21002,7 +20979,6 @@
       "series": "潜水员戴夫系列",
       "tags": [],
       "owners": [
-        "老胡",
         "小寒",
         "ZZZ",
         "老梁"
@@ -21189,8 +21165,7 @@
       "series": "最后生还者系列",
       "tags": [],
       "owners": [
-        "老胡",
-        "老梁"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -21221,8 +21196,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
-        "小寒"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -21270,8 +21244,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
-        "木贰",
         "老梁"
       ],
       "share": true,
@@ -21470,8 +21442,7 @@
       "series": "开罗物语系列",
       "tags": [],
       "owners": [
-        "ZZZ",
-        "木贰"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -22207,8 +22178,7 @@
         "生化危机"
       ],
       "owners": [
-        "老胡",
-        "木贰"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -22396,8 +22366,7 @@
         "人中之龙"
       ],
       "owners": [
-        "老胡",
-        "ZZZ"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -22830,7 +22799,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒",
         "木贰"
       ],
       "share": true,
@@ -23602,7 +23570,6 @@
       "series": "黑神话悟空",
       "tags": [],
       "owners": [
-        "老胡",
         "小寒",
         "ZZZ",
         "木贰",
@@ -23706,7 +23673,6 @@
       "owners": [
         "小寒",
         "ZZZ",
-        "木贰",
         "老梁"
       ],
       "share": true,
@@ -23727,8 +23693,7 @@
         "三国"
       ],
       "owners": [
-        "ZZZ",
-        "老梁"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -24394,8 +24359,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
-        "老梁"
+        "老胡"
       ],
       "share": false,
       "exclude": "3"
@@ -25721,10 +25685,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡",
-        "ZZZ",
-        "木贰",
-        "老梁"
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -25773,8 +25734,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "小寒",
-        "老梁"
+        "小寒"
       ],
       "share": false,
       "exclude": "3"
@@ -26154,8 +26114,7 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ",
-        "木贰"
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -26197,7 +26156,6 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ",
         "老梁"
       ],
       "share": true,
