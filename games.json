@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-07",
   "games": [
     {
       "id": 70,
@@ -1570,7 +1570,8 @@
         "无主之地"
       ],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -1710,6 +1711,7 @@
       "owners": [
         "老胡",
         "小寒",
+        "ZZZ",
         "木贰",
         "老梁"
       ],
@@ -2137,6 +2139,23 @@
       "exclude": ""
     },
     {
+      "id": 208140,
+      "name": "ENDLESS Space™ - Definitive Edition",
+      "cn": "无尽空间",
+      "en": "ENDLESS Space™ - Definitive Edition",
+      "aliases": [
+        "endless",
+        "无尽空间"
+      ],
+      "series": "ENDLESS系列",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 208200,
       "name": "DOOM 3: BFG Edition",
       "cn": "毁灭战士3：BFG",
@@ -2254,7 +2273,7 @@
       "id": 213610,
       "name": "Sonic Adventure™ 2",
       "cn": "索尼克大冒险2",
-      "en": "Sonic Adventure™ 2 ",
+      "en": "Sonic Adventure™ 2",
       "aliases": [
         "sonic",
         "索尼克",
@@ -2319,8 +2338,12 @@
       "name": "全面战争：罗马2 - 帝皇版",
       "cn": "全面战争：罗马2 - 帝皇版",
       "en": "Total War: ROME II - Emperor Edition",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "total-war",
+        "全面战争",
+        "罗马2"
+      ],
+      "series": "全面战争系列",
       "tags": [
         "全面战争"
       ],
@@ -2677,7 +2700,7 @@
       "id": 228200,
       "name": "Company of Heroes",
       "cn": "英雄连",
-      "en": "Company of Heroes ",
+      "en": "Company of Heroes",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -2798,7 +2821,8 @@
       "series": "孤岛惊魂系列",
       "tags": [],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "木贰"
       ],
       "share": false,
       "exclude": ""
@@ -3012,7 +3036,8 @@
       "owners": [
         "小寒",
         "ZZZ",
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -3459,8 +3484,11 @@
       "name": "塔罗斯的法则",
       "cn": "塔罗斯的法则",
       "en": "The Talos Principle",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "talos-principle",
+        "塔罗斯"
+      ],
+      "series": "塔罗斯法则系列",
       "tags": [],
       "owners": [
         "木贰"
@@ -3566,8 +3594,8 @@
     },
     {
       "id": 262060,
-      "name": "Darkest Dungeon®",
-      "cn": "暗黑地牢",
+      "name": "暗黑地牢 Darkest Dungeon",
+      "cn": "暗黑地牢 Darkest Dungeon",
       "en": "Darkest Dungeon®",
       "aliases": [],
       "series": "",
@@ -3697,6 +3725,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "木贰",
         "老梁"
       ],
@@ -3907,7 +3936,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -3917,8 +3947,11 @@
       "name": "Jagged Alliance Gold",
       "cn": "铁血联盟1黄金版",
       "en": "Jagged Alliance Gold",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "jagged-alliance",
+        "铁血联盟"
+      ],
+      "series": "铁血联盟系列",
       "tags": [],
       "owners": [
         "ZZZ"
@@ -4079,8 +4112,11 @@
       "name": "无尽帝国",
       "cn": "无尽帝国",
       "en": "ENDLESS Legend™",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "endless",
+        "无尽帝国"
+      ],
+      "series": "ENDLESS系列",
       "tags": [],
       "owners": [
         "木贰"
@@ -4188,7 +4224,7 @@
     },
     {
       "id": 292030,
-      "name": "巫师 3：狂猎 - 完全版",
+      "name": "巫师3：狂猎 — 重制版",
       "cn": "巫师 3：狂猎",
       "en": "The Witcher 3: Wild Hunt",
       "aliases": [
@@ -4917,12 +4953,18 @@
       "name": "CLANNAD",
       "cn": "CLANNAD",
       "en": "CLANNAD",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "clannad"
+      ],
+      "series": "KEY社",
       "tags": [
         "KEY社"
       ],
       "owners": [
+        "小寒",
         "木贰"
       ],
       "share": true,
@@ -5218,7 +5260,7 @@
       "id": 350080,
       "name": "Wolfenstein: The Old Blood",
       "cn": "德军总部：旧血脉",
-      "en": "Wolfenstein: The Old Blood ",
+      "en": "Wolfenstein: The Old Blood",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -5649,8 +5691,10 @@
         "空洞骑士"
       ],
       "owners": [
+        "老胡",
         "小寒",
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -5886,7 +5930,8 @@
       ],
       "owners": [
         "小寒",
-        "ZZZ"
+        "ZZZ",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -5910,8 +5955,12 @@
       "name": "Kingdom Come: Deliverance",
       "cn": "天国：拯救",
       "en": "Kingdom Come: Deliverance",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "kingdom-come",
+        "天国拯救",
+        "天国"
+      ],
+      "series": "天国拯救系列",
       "tags": [],
       "owners": [
         "小寒",
@@ -7717,6 +7766,20 @@
       "exclude": ""
     },
     {
+      "id": 493520,
+      "name": "GTFO",
+      "cn": "GTFO",
+      "en": "GTFO",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 495140,
       "name": "NARUTO: Ultimate Ninja STORM",
       "cn": "火影忍者：究极忍者风暴",
@@ -7992,7 +8055,7 @@
       "id": 521730,
       "name": "Romance of the Three Kingdoms IV with Power Up Kit",
       "cn": "三国志4",
-      "en": "Romance of the Three Kingdoms IV with Power Up Kit ",
+      "en": "Romance of the Three Kingdoms IV with Power Up Kit",
       "aliases": [],
       "series": "",
       "tags": [
@@ -8029,6 +8092,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "ZZZ",
         "老梁"
       ],
@@ -8295,7 +8359,7 @@
       "id": 546050,
       "name": "Puyo Puyo™Tetris®",
       "cn": "噗哟噗哟+俄罗斯方块",
-      "en": "Puyo Puyo™Tetris® ",
+      "en": "Puyo Puyo™Tetris®",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -8495,6 +8559,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "木贰",
         "老梁"
       ],
       "share": true,
@@ -8994,13 +9059,18 @@
       "name": "全面战争：战锤2",
       "cn": "全面战争：战锤2",
       "en": "Total War: WARHAMMER II",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "total-war",
+        "全面战争",
+        "战锤"
+      ],
+      "series": "全面战争系列",
       "tags": [
         "全面战争",
         "战锤"
       ],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -9308,7 +9378,7 @@
       "id": 614570,
       "name": "Dishonored®: Death of the Outsider™",
       "cn": "耻辱：界外魔之死",
-      "en": "Dishonored®: Death of the Outsider™ ",
+      "en": "Dishonored®: Death of the Outsider™",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -9753,7 +9823,7 @@
       "id": 638000,
       "name": "当滑雪升降机发生了故障",
       "cn": "当滑雪升降机发生了故障",
-      "en": "When Ski Lifts Go Wrong ",
+      "en": "When Ski Lifts Go Wrong",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -9772,7 +9842,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -10087,6 +10158,26 @@
       "exclude": ""
     },
     {
+      "id": 673880,
+      "name": "Warhammer 40,000: Mechanicus",
+      "cn": "战锤40K：机械神教",
+      "en": "Warhammer 40,000: Mechanicus",
+      "aliases": [
+        "warhammer-40k",
+        "战锤40k",
+        "机械神教"
+      ],
+      "series": "战锤40K系列",
+      "tags": [
+        "战锤"
+      ],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 674750,
       "name": "Yet Another Zombie Defense HD",
       "cn": "又一个僵尸塔防 高清版",
@@ -10186,7 +10277,8 @@
       "series": "仙剑奇侠传系列",
       "tags": [],
       "owners": [
-        "老胡"
+        "老胡",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -10552,8 +10644,12 @@
       "name": "全面战争传奇：不列颠王座",
       "cn": "全面战争传奇：不列颠王座",
       "en": "A Total War Saga: THRONES OF BRITANNIA",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "total-war",
+        "全面战争",
+        "不列颠王座"
+      ],
+      "series": "全面战争系列",
       "tags": [
         "全面战争"
       ],
@@ -10663,6 +10759,7 @@
       "owners": [
         "老胡",
         "小寒",
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -10923,6 +11020,34 @@
       "name": "Forager",
       "cn": "浮岛物语",
       "en": "Forager",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 752590,
+      "name": "A Plague Tale: Innocence",
+      "cn": "瘟疫传说：无罪",
+      "en": "A Plague Tale: Innocence",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 753640,
+      "name": "Outer Wilds",
+      "cn": "星际拓荒",
+      "en": "Outer Wilds",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -11197,8 +11322,12 @@
       "name": "全面战争：三国",
       "cn": "全面战争：三国",
       "en": "Total War: THREE KINGDOMS",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "total-war",
+        "全面战争",
+        "三国"
+      ],
+      "series": "全面战争系列",
       "tags": [
         "全面战争"
       ],
@@ -11716,6 +11845,23 @@
       "en": "ATLAS",
       "aliases": [],
       "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 835960,
+      "name": "塔罗斯的法则2",
+      "cn": "塔罗斯的法则2",
+      "en": "The Talos Principle 2",
+      "aliases": [
+        "talos-principle",
+        "塔罗斯"
+      ],
+      "series": "塔罗斯法则系列",
       "tags": [],
       "owners": [
         "木贰"
@@ -13030,7 +13176,7 @@
       "id": 983150,
       "name": "樱之杜†净梦者 2",
       "cn": "樱之杜†净梦者 2",
-      "en": " Sakura no Mori † Dreamers 2",
+      "en": "Sakura no Mori † Dreamers 2",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -13454,7 +13600,7 @@
     {
       "id": 1030840,
       "name": "《四海兄弟: 最终版》​",
-      "cn": " 《四海兄弟: 最终版》​",
+      "cn": "《四海兄弟: 最终版》​",
       "en": "Mafia: Definitive Edition",
       "aliases": [
         "mafia",
@@ -13719,6 +13865,20 @@
       "exclude": ""
     },
     {
+      "id": 1046400,
+      "name": "阿斯达伦: 地球之泪",
+      "cn": "阿斯达伦: 地球之泪",
+      "en": "Astalon: Tears of the Earth",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1047440,
       "name": "DATE A LIVE: Rio Reincarnation",
       "cn": "约会大作战：凛绪轮回",
@@ -13824,7 +13984,9 @@
       "aliases": [
         "ori",
         "奥日",
-        "精灵与森林"
+        "萤火意志",
+        "奥日与萤火意志",
+        "will of the wisps"
       ],
       "series": "奥日系列",
       "tags": [],
@@ -13964,6 +14126,20 @@
       "exclude": ""
     },
     {
+      "id": 1067360,
+      "name": "暗星铁律",
+      "cn": "暗星铁律",
+      "en": "Pax Autocratica",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "木贰"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1069230,
       "name": "月影魅像-解放之羽-",
       "cn": "月影魅像-解放之羽-",
@@ -14043,6 +14219,23 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1084160,
+      "name": "Jagged Alliance 3",
+      "cn": "铁血联盟3",
+      "en": "Jagged Alliance 3",
+      "aliases": [
+        "jagged-alliance",
+        "铁血联盟"
+      ],
+      "series": "铁血联盟系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -14195,6 +14388,20 @@
       "tags": [],
       "owners": [
         "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1096530,
+      "name": "索拉斯塔：魔导师之冠",
+      "cn": "索拉斯塔：魔导师之冠",
+      "en": "Solasta: Crown of the Magister",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -15057,7 +15264,8 @@
       "tags": [],
       "owners": [
         "小寒",
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -15560,7 +15768,7 @@
     },
     {
       "id": 1213300,
-      "name": "叛逆神魂 GODSOUL🔥",
+      "name": "叛逆神魂-GODSOUL-🔥",
       "cn": "叛逆神魂 GODSOUL🔥",
       "en": "Rebellion GODSOUL: Awakening",
       "aliases": [],
@@ -16375,7 +16583,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -16461,6 +16670,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1273400,
+      "name": "建筑模拟器",
+      "cn": "建筑模拟器",
+      "en": "Construction Simulator",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -16648,7 +16871,7 @@
     {
       "id": 1283400,
       "name": "Steelrising 钢之崛起",
-      "cn": "Steelrising 钢之崛起 ",
+      "cn": "Steelrising 钢之崛起",
       "en": "Steelrising",
       "aliases": [],
       "series": "",
@@ -16985,6 +17208,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "木贰",
         "老梁"
       ],
       "share": true,
@@ -17446,7 +17670,7 @@
     {
       "id": 1346770,
       "name": "醋意乱流",
-      "cn": "醋意乱流 ",
+      "cn": "醋意乱流",
       "en": "YAKIMOCHI STREAM",
       "aliases": [],
       "series": "",
@@ -17580,8 +17804,12 @@
       "name": "战锤40K：暗潮",
       "cn": "战锤40K：暗潮",
       "en": "Warhammer 40,000: Darktide",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "warhammer-40k",
+        "战锤40k",
+        "暗潮"
+      ],
+      "series": "战锤40K系列",
       "tags": [
         "战锤"
       ],
@@ -17648,6 +17876,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -17897,6 +18126,8 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
+        "木贰",
         "老梁"
       ],
       "share": true,
@@ -18043,6 +18274,23 @@
       "exclude": ""
     },
     {
+      "id": 1436700,
+      "name": "Trine 5: A Clockwork Conspiracy",
+      "cn": "三位一体5:+发条阴谋",
+      "en": "Trine 5: A Clockwork Conspiracy",
+      "aliases": [
+        "trine",
+        "三位一体"
+      ],
+      "series": "Trine系列",
+      "tags": [],
+      "owners": [
+        "ZZZ"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 1437400,
       "name": "Salt and Sacrifice",
       "cn": "盐与献祭",
@@ -18095,7 +18343,7 @@
     {
       "id": 1437840,
       "name": "三国群英传3",
-      "cn": " 三国群英传3",
+      "cn": "三国群英传3",
       "en": "Heroes of the Three Kingdoms 3",
       "aliases": [],
       "series": "",
@@ -18336,7 +18584,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "木贰"
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -19242,7 +19491,8 @@
       "series": "东方Project",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -19724,7 +19974,7 @@
     {
       "id": 1649080,
       "name": "双点校园",
-      "cn": "双点校园 ",
+      "cn": "双点校园",
       "en": "Two Point Campus",
       "aliases": [],
       "series": "",
@@ -19945,6 +20195,7 @@
       "owners": [
         "老胡",
         "小寒",
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -20030,6 +20281,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒",
         "老梁"
       ],
@@ -20212,10 +20464,15 @@
       "name": "天国：拯救2",
       "cn": "天国：拯救2",
       "en": "Kingdom Come: Deliverance II",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "kingdom-come",
+        "天国拯救",
+        "天国"
+      ],
+      "series": "天国拯救系列",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
@@ -20487,7 +20744,8 @@
       "tags": [],
       "owners": [
         "老胡",
-        "小寒"
+        "小寒",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -20744,6 +21002,7 @@
       "series": "潜水员戴夫系列",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒",
         "ZZZ",
         "老梁"
@@ -20930,7 +21189,8 @@
       "series": "最后生还者系列",
       "tags": [],
       "owners": [
-        "老胡"
+        "老胡",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -21010,6 +21270,8 @@
       "series": "",
       "tags": [],
       "owners": [
+        "老胡",
+        "木贰",
         "老梁"
       ],
       "share": true,
@@ -21208,7 +21470,8 @@
       "series": "开罗物语系列",
       "tags": [],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -21319,8 +21582,8 @@
     },
     {
       "id": 1940340,
-      "name": "Darkest Dungeon® II",
-      "cn": "暗黑地牢2",
+      "name": "暗黑地牢2 Darkest Dungeon II",
+      "cn": "暗黑地牢2 Darkest Dungeon II",
       "en": "Darkest Dungeon® II",
       "aliases": [],
       "series": "",
@@ -21944,7 +22207,8 @@
         "生化危机"
       ],
       "owners": [
-        "老胡"
+        "老胡",
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -22132,7 +22396,8 @@
         "人中之龙"
       ],
       "owners": [
-        "老胡"
+        "老胡",
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -22188,8 +22453,12 @@
       "name": "战锤40K：极速狂飙",
       "cn": "战锤40K：极速狂飙",
       "en": "Warhammer 40,000: Speed Freeks",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "warhammer-40k",
+        "战锤40k",
+        "极速狂飙"
+      ],
+      "series": "战锤40K系列",
       "tags": [
         "战锤"
       ],
@@ -23101,6 +23370,7 @@
       "tags": [],
       "owners": [
         "ZZZ",
+        "木贰",
         "老梁"
       ],
       "share": false,
@@ -23332,10 +23602,25 @@
       "series": "黑神话悟空",
       "tags": [],
       "owners": [
+        "老胡",
         "小寒",
         "ZZZ",
         "木贰",
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2365810,
+      "name": "Pseudoregalia",
+      "cn": "Pseudoregalia",
+      "en": "Pseudoregalia",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡"
       ],
       "share": true,
       "exclude": ""
@@ -23353,7 +23638,8 @@
       "series": "孤岛惊魂系列",
       "tags": [],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "木贰"
       ],
       "share": false,
       "exclude": ""
@@ -23420,6 +23706,7 @@
       "owners": [
         "小寒",
         "ZZZ",
+        "木贰",
         "老梁"
       ],
       "share": true,
@@ -23440,7 +23727,8 @@
         "三国"
       ],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -23729,6 +24017,20 @@
         "逐星之旅"
       ],
       "series": "深空梦里人系列",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2453360,
+      "name": "鸡械绿洲",
+      "cn": "鸡械绿洲",
+      "en": "Cluckmech Oasis",
+      "aliases": [],
+      "series": "",
       "tags": [],
       "owners": [
         "老梁"
@@ -24407,6 +24709,23 @@
       "exclude": ""
     },
     {
+      "id": 2717880,
+      "name": "波斯王子：Rogue",
+      "cn": "波斯王子：Rogue",
+      "en": "波斯王子：Rogue",
+      "aliases": [
+        "prince-of-persia",
+        "波斯王子"
+      ],
+      "series": "波斯王子系列",
+      "tags": [],
+      "owners": [
+        "老胡"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 2719060,
       "name": "幻耀的羽毛 / Mirage Feathers",
       "cn": "幻耀的羽毛 / Mirage Feathers",
@@ -24453,8 +24772,11 @@
       "name": "波斯王子：失落的王冠",
       "cn": "波斯王子：失落的王冠",
       "en": "波斯王子：失落的王冠",
-      "aliases": [],
-      "series": "",
+      "aliases": [
+        "prince-of-persia",
+        "波斯王子"
+      ],
+      "series": "波斯王子系列",
       "tags": [],
       "owners": [
         "老胡"
@@ -24546,6 +24868,23 @@
       "tags": [],
       "owners": [
         "小寒"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2806640,
+      "name": "塔罗斯法则：重启",
+      "cn": "塔罗斯法则：重启",
+      "en": "The Talos Principle: Reawakened",
+      "aliases": [
+        "talos-principle",
+        "塔罗斯"
+      ],
+      "series": "塔罗斯法则系列",
+      "tags": [],
+      "owners": [
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -25161,7 +25500,7 @@
     {
       "id": 3171460,
       "name": "初雪樱",
-      "cn": "初雪樱 ",
+      "cn": "初雪樱",
       "en": "Hatsuyuki Sakura",
       "aliases": [],
       "series": "",
@@ -25297,7 +25636,7 @@
       "id": 3350200,
       "name": "情感反诈模拟器",
       "cn": "情感反诈模拟器",
-      "en": "Revenge on gold diggers ",
+      "en": "Revenge on gold diggers",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -25382,7 +25721,10 @@
       "series": "",
       "tags": [],
       "owners": [
-        "老胡"
+        "老胡",
+        "ZZZ",
+        "木贰",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -25436,6 +25778,21 @@
       ],
       "share": false,
       "exclude": "3"
+    },
+    {
+      "id": 3478050,
+      "name": "女王的游戏：盛世天下 媚娘篇",
+      "cn": "女王的游戏：盛世天下 媚娘篇",
+      "en": "Road to Empress I",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老胡",
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
     },
     {
       "id": 3486610,
@@ -25797,7 +26154,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "木贰"
       ],
       "share": true,
       "exclude": ""
@@ -25806,7 +26164,7 @@
       "id": 3936590,
       "name": "探险异星飞行队 (Final Frontier Story)",
       "cn": "探险异星飞行队 (Final Frontier Story)",
-      "en": "Final Frontier Story ",
+      "en": "Final Frontier Story",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -25839,6 +26197,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "老梁"
       ],
       "share": true,
