@@ -2,6 +2,16 @@
 
 > 每次推送前在此追加一条(最新在上)。数据类更新顺手记游戏数量变化。
 
+## 2026-10-19 · 新增16款 · 小寒12款视觉小说 + 3个新系列
+- **总量 1687→1703**:新增 16 款、无消失。全库 **1703 款,可共享 1513**。
+- **注意口径**:成员个人库页面共 +26 款,但**真正新进清单只有 16 款**;其余为已被共享进页面的既有游戏(5 款)、页面新增但站内早已存在(3 款:建筑模拟器/世界越野冠军赛/东方冰之勇者记)及 Demo(2 款:632810、2686970,已按规则剔除)。
+- **新增分布**:小寒 12 款(A Bird Story / Finding Paradise《寻找天堂》/ CLANNAD Side Stories / Narcissu 10th Anniversary / Tomoyo After / 夏末盛开的花 / Impostor Factory《影子工厂》/ Rewrite+ / LOOPERS / Rewrite Harvest festa! / Just a To the Moon Series Beach Episode / 爱丽丝之眼);老梁 3 款(天地归虚 / Travellin Cats Around the World / 堆叠妖怪);ZZZ 1 款(RiMS Racing)。
+- **可共享**:家庭清单 1348→1353,+5 款(RiMS Racing、天地归虚、东方冰之勇者记、Travellin Cats、堆叠妖怪)、无移除。新增 16 款中 4 款 `share=True`;小寒 12 款不在本组家庭清单,站内显示「拥有但不可共享」。
+- **owners 修正 3 款(均为新增拥有者,无丢失)**:建筑模拟器 +老梁、世界越野冠军赛 +ZZZ、东方冰之勇者记 +老梁。
+- **系列标签 15 行**:已有系列追加 KEY社 5 行(CLANNAD Side Stories / Tomoyo After / Rewrite+ / LOOPERS / Rewrite Harvest festa!);**新建 3 个系列 10 行** —— 去月球系列(去月球 / A Bird Story / Finding Paradise / Impostor Factory / Beach Episode)、水仙系列(Narcissu 1st&2nd / 10th Anniversary)、Daniel Mullins系列(Pony Island / The Hex / Inscryption)。
+- **标签规则 +3 行**(去月球 / 水仙 / Daniel Mullins),后续同系列新游戏自动打标。
+- **小黑盒补中文 2 款**:鸟的故事(A Bird Story)、水仙十周年完全版(Narcissu 10th Anniversary);仍缺中文 6 款(CLANNAD Side Stories / Tomoyo After / Rewrite+ / LOOPERS / Rewrite Harvest festa! / RiMS Racing,均无官方中文,保持英文)。
+
 ## 2026-10-07 · 新增17款 + 修正 owners 归属(家庭共享污染)· 5 个新系列
 - **总量 1670→1687**:新增 17 款、无消失。全库 **1687 款,可共享 1509**。
 - **⚠ 修正 owners 归属(重要)**:站内「拥有者」原取自成员个人库 tsv,而该页面(社区库 `rgGames`)**包含家庭共享给该成员的游戏**,于是把「能玩到的人」当成了「拥有者」,且随共享扩散逐周恶化(上周已有苗头:泰拉瑞亚把不拥有它的小寒算了进去)。现改为**只认家庭清单的权威 `owner_steamids`**(成员个人库仅在该游戏不出现在任何家庭清单时兜底)。共修正 **51 款**的拥有者;五位成员显示拥有数变为:老胡 233 / 小寒 354 / ZZZ 498 / 木贰 595 / 老梁 591。

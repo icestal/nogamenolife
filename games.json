@@ -2,7 +2,7 @@
   "site": {
     "title": "只买不玩康复中心"
   },
-  "updated": "2026-10-07",
+  "updated": "2026-10-19",
   "games": [
     {
       "id": 70,
@@ -1255,9 +1255,9 @@
     },
     {
       "id": 39500,
-      "name": "Gothic 3",
+      "name": "Gothic 3 Classic",
       "cn": "哥特王朝3",
-      "en": "Gothic 3",
+      "en": "Gothic 3 Classic",
       "aliases": [],
       "series": "",
       "tags": [],
@@ -2093,9 +2093,15 @@
       "name": "To the Moon《去月球》",
       "cn": "To the Moon《去月球》",
       "en": "To the Moon",
-      "aliases": [],
-      "series": "",
-      "tags": [],
+      "aliases": [
+        "to-the-moon",
+        "去月球",
+        "tothe moon"
+      ],
+      "series": "去月球系列",
+      "tags": [
+        "去月球"
+      ],
       "owners": [
         "小寒"
       ],
@@ -3613,9 +3619,15 @@
       "name": "Narcissu 1st & 2nd",
       "cn": "水仙1+2",
       "en": "Narcissu 1st & 2nd",
-      "aliases": [],
-      "series": "",
-      "tags": [],
+      "aliases": [
+        "narcissu",
+        "水仙",
+        "narcissu"
+      ],
+      "series": "水仙系列",
+      "tags": [
+        "水仙"
+      ],
       "owners": [
         "小寒"
       ],
@@ -4453,8 +4465,8 @@
     },
     {
       "id": 306130,
-      "name": "《上古卷轴®OL》",
-      "cn": "《上古卷轴®OL》",
+      "name": "《上古卷轴OL》",
+      "cn": "《上古卷轴OL》",
       "en": "The Elder Scrolls Online",
       "aliases": [
         "elder-scrolls",
@@ -4991,6 +5003,26 @@
       "exclude": ""
     },
     {
+      "id": 327410,
+      "name": "A Bird Story",
+      "cn": "鸟的故事",
+      "en": "A Bird Story",
+      "aliases": [
+        "to-the-moon",
+        "去月球",
+        "a bird story"
+      ],
+      "series": "去月球系列",
+      "tags": [
+        "去月球"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 329050,
       "name": "Devil May Cry 4 Special Edition",
       "cn": "鬼泣4 特别版",
@@ -5161,6 +5193,27 @@
         "木贰"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 337340,
+      "name": "Finding Paradise《寻找天堂》",
+      "cn": "Finding Paradise《寻找天堂》",
+      "en": "Finding Paradise《寻找天堂》",
+      "aliases": [
+        "to-the-moon",
+        "去月球",
+        "寻找天堂",
+        "finding paradise"
+      ],
+      "series": "去月球系列",
+      "tags": [
+        "去月球"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -5511,8 +5564,8 @@
     },
     {
       "id": 360430,
-      "name": "Mafia III: Definitive Edition",
-      "cn": "四海兄弟3：最终版",
+      "name": "《四海兄弟 III：最终版》",
+      "cn": "《四海兄弟 III：最终版》",
       "en": "Mafia III: Definitive Edition",
       "aliases": [
         "mafia",
@@ -6387,9 +6440,15 @@
       "name": "Pony Island",
       "cn": "小马岛",
       "en": "Pony Island",
-      "aliases": [],
-      "series": "",
-      "tags": [],
+      "aliases": [
+        "daniel-mullins",
+        "pony island",
+        "小马岛"
+      ],
+      "series": "Daniel Mullins系列",
+      "tags": [
+        "Daniel Mullins"
+      ],
       "owners": [
         "木贰"
       ],
@@ -6697,6 +6756,27 @@
       "exclude": ""
     },
     {
+      "id": 420100,
+      "name": "CLANNAD Side Stories",
+      "cn": "CLANNAD Side Stories",
+      "en": "CLANNAD Side Stories",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "clannad"
+      ],
+      "series": "KEY社",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 420110,
       "name": "NEKOPARA Vol. 2",
       "cn": "巧克力和香子兰 Vol.2",
@@ -6824,6 +6904,26 @@
         "木贰"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 426690,
+      "name": "Narcissu 10th Anniversary Anthology Project",
+      "cn": "水仙十周年完全版",
+      "en": "Narcissu 10th Anniversary Anthology Project",
+      "aliases": [
+        "narcissu",
+        "水仙",
+        "narcissu"
+      ],
+      "series": "水仙系列",
+      "tags": [
+        "水仙"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -7381,6 +7481,26 @@
       "exclude": ""
     },
     {
+      "id": 462990,
+      "name": "Tomoyo After ~It's a Wonderful Life~ English Edition",
+      "cn": "Tomoyo After ~It's a Wonderful Life~ English Edition",
+      "en": "Tomoyo After ~It's a Wonderful Life~ English Edition",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "智代after",
+        "tomoyo"
+      ],
+      "series": "KEY社",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 463530,
       "name": "地下蚁国 Empires of the Undergrowth",
       "cn": "地下蚁国 Empires of the Undergrowth",
@@ -7918,9 +8038,15 @@
       "name": "The Hex",
       "cn": "六角",
       "en": "The Hex",
-      "aliases": [],
-      "series": "",
-      "tags": [],
+      "aliases": [
+        "daniel-mullins",
+        "the hex",
+        "六角"
+      ],
+      "series": "Daniel Mullins系列",
+      "tags": [
+        "Daniel Mullins"
+      ],
       "owners": [
         "木贰"
       ],
@@ -14357,9 +14483,15 @@
       "name": "邪恶冥刻",
       "cn": "邪恶冥刻",
       "en": "Inscryption",
-      "aliases": [],
-      "series": "",
-      "tags": [],
+      "aliases": [
+        "daniel-mullins",
+        "inscryption",
+        "邪恶冥刻"
+      ],
+      "series": "Daniel Mullins系列",
+      "tags": [
+        "Daniel Mullins"
+      ],
       "owners": [
         "小寒",
         "木贰",
@@ -15309,6 +15441,20 @@
       "exclude": ""
     },
     {
+      "id": 1173010,
+      "name": "夏末盛开的花",
+      "cn": "夏末盛开的花",
+      "en": "夏末盛开的花",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 1174180,
       "name": "Red Dead Redemption 2",
       "cn": "荒野大镖客：救赎2",
@@ -15415,6 +15561,27 @@
         "老梁"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1182620,
+      "name": "Impostor Factory《影子工厂》",
+      "cn": "Impostor Factory《影子工厂》",
+      "en": "Impostor Factory《影子工厂》",
+      "aliases": [
+        "to-the-moon",
+        "去月球",
+        "影子工厂",
+        "impostor factory"
+      ],
+      "series": "去月球系列",
+      "tags": [
+        "去月球"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -16671,7 +16838,8 @@
       "series": "",
       "tags": [],
       "owners": [
-        "ZZZ"
+        "ZZZ",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -17650,6 +17818,20 @@
       "tags": [],
       "owners": [
         "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1346010,
+      "name": "RiMS Racing",
+      "cn": "RiMS Racing",
+      "en": "RiMS Racing",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "ZZZ"
       ],
       "share": true,
       "exclude": ""
@@ -20132,6 +20314,27 @@
       "exclude": ""
     },
     {
+      "id": 1680000,
+      "name": "Rewrite+",
+      "cn": "Rewrite+",
+      "en": "Rewrite+",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "rewrite"
+      ],
+      "series": "KEY社",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 1681430,
       "name": "机械战警：暴戾都市",
       "cn": "机械战警：暴戾都市",
@@ -20291,6 +20494,20 @@
       "tags": [],
       "owners": [
         "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1729410,
+      "name": "天地归虚",
+      "cn": "天地归虚",
+      "en": "Earthling's Undertaking",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -20696,6 +20913,25 @@
       "exclude": ""
     },
     {
+      "id": 1811500,
+      "name": "LOOPERS",
+      "cn": "LOOPERS",
+      "en": "LOOPERS",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "loopers"
+      ],
+      "series": "KEY社",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 1815570,
       "name": "王牌与冒险",
       "cn": "王牌与冒险",
@@ -20909,6 +21145,28 @@
         "老梁"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 1856600,
+      "name": "Rewrite Harvest festa!",
+      "cn": "Rewrite Harvest festa!",
+      "en": "Rewrite Harvest festa!",
+      "aliases": [
+        "key",
+        "键社",
+        "麻枝准",
+        "rewrite",
+        "harvest-festa"
+      ],
+      "series": "KEY社",
+      "tags": [
+        "KEY社"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     },
     {
@@ -21696,6 +21954,7 @@
       "series": "",
       "tags": [],
       "owners": [
+        "ZZZ",
         "木贰"
       ],
       "share": true,
@@ -21728,7 +21987,8 @@
       "series": "东方Project",
       "tags": [],
       "owners": [
-        "小寒"
+        "小寒",
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -22884,6 +23144,26 @@
       "exclude": ""
     },
     {
+      "id": 2159210,
+      "name": "Just a To the Moon Series Beach Episode 《去月球系列海滩特别篇》",
+      "cn": "Just a To the Moon Series Beach Episode 《去月球系列海滩特别篇》",
+      "en": "Just a To the Moon Series Beach Episode 《去月球系列海滩特别篇》",
+      "aliases": [
+        "to-the-moon",
+        "去月球",
+        "beach episode"
+      ],
+      "series": "去月球系列",
+      "tags": [
+        "去月球"
+      ],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
+      "exclude": ""
+    },
+    {
       "id": 2161440,
       "name": "风帆纪元 Sailing Era",
       "cn": "风帆纪元 Sailing Era",
@@ -23196,8 +23476,8 @@
     },
     {
       "id": 2239150,
-      "name": "Thronefall",
-      "cn": "王座陨落",
+      "name": "Thronefall《王权陨落》",
+      "cn": "Thronefall《王权陨落》",
       "en": "Thronefall",
       "aliases": [],
       "series": "",
@@ -23641,6 +23921,20 @@
       ],
       "owners": [
         "老胡"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 2377970,
+      "name": "Travellin Cats Around the World",
+      "cn": "隐藏在世界各地的猫",
+      "en": "Travellin Cats Around the World",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
       ],
       "share": true,
       "exclude": ""
@@ -25919,6 +26213,20 @@
       "exclude": ""
     },
     {
+      "id": 3729550,
+      "name": "堆叠妖怪",
+      "cn": "堆叠妖怪",
+      "en": "Stackmon",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "老梁"
+      ],
+      "share": true,
+      "exclude": ""
+    },
+    {
       "id": 3755860,
       "name": "BLACK SOULS",
       "cn": "黑色之魂",
@@ -26264,6 +26572,20 @@
         "ZZZ"
       ],
       "share": true,
+      "exclude": ""
+    },
+    {
+      "id": 4529120,
+      "name": "爱丽丝之眼",
+      "cn": "爱丽丝之眼",
+      "en": "爱丽丝之眼",
+      "aliases": [],
+      "series": "",
+      "tags": [],
+      "owners": [
+        "小寒"
+      ],
+      "share": false,
       "exclude": ""
     }
   ]
